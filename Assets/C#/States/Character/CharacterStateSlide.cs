@@ -42,13 +42,16 @@ public class CharacterStateSlide : CharacterState
 		clearTimeStart = Time.time;
 		// animate
 		blackboard.anim.SetTrigger("slide");
+		// dust
+		blackboard.feetDust.Play();
 	}
 
 
 
 	public override void EndState()
 	{
-
+		// dust
+		blackboard.feetDust.Stop();
 	}
 
 

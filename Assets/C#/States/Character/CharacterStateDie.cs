@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterStateDie : CharacterState
 {
 
-
+	bool animated = false;
 
 
 
@@ -17,6 +17,14 @@ public class CharacterStateDie : CharacterState
 		blackboard.y -= Mathf.Abs(Physics.gravity.y) * Time.fixedDeltaTime;	
 		// move
 		blackboard.agent.Move((Physics.gravity.normalized * -blackboard.y) * Time.fixedDeltaTime);
+
+		// die animation when grounded
+		if(blackboard.feet.isGrounded && !animated)
+		{						
+			// grounded
+			animated = true;
+			blackboard.anim.SetTrigger("die");			
+		}
 	}
 
 

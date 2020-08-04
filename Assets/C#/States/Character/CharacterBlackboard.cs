@@ -16,6 +16,7 @@ public class CharacterBlackboard : MonoBehaviour
 	public GroundChecker feet;
 	public Animator anim;
 	public VelocityTracker tracker;
+	public ParticleSystem feetDust;
 	public Transform character,
 		cameraControl;
 	public float speed = 6,
