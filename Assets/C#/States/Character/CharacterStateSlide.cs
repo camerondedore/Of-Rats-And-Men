@@ -31,6 +31,8 @@ public class CharacterStateSlide : CharacterState
 		{
 			clear = true;
 			clearTimeStart = Time.time;
+			// dust
+			blackboard.feetDust.Stop();
 		}
 	}
 
