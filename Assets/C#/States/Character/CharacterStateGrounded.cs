@@ -48,7 +48,7 @@ public class CharacterStateGrounded : CharacterState
 
 	public override void EndState()
 	{
-
+		
 	}
 
 
