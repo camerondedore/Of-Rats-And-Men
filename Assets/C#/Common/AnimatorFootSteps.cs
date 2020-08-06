@@ -5,7 +5,8 @@ using UnityEngine;
 public class AnimatorFootSteps : MonoBehaviour
 {
     
-	public AudioClip stepSound;
+	public AudioClip stepSound,
+		slideSound;
 	public float randomPitch = 0.3f;
 	AudioSourceController aud;
 
@@ -22,5 +23,21 @@ public class AnimatorFootSteps : MonoBehaviour
 	{
 		aud.RandomizePitch(randomPitch);
 		aud.PlayOneShot(stepSound);
+	}
+
+
+
+	public void SlideStart()
+	{
+		aud.source.clip = slideSound;
+		aud.source.Play();
+	}
+
+
+
+	public void SlideStop()
+	{
+		aud.source.clip = null;
+		aud.source.Stop();
 	}
 }

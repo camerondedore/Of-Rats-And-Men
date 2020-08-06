@@ -46,6 +46,8 @@ public class CharacterStateSlide : CharacterState
 		blackboard.anim.SetTrigger("slide");
 		// dust
 		blackboard.feetDust.Play();
+		// sound
+		blackboard.feetAud.SlideStart();
 	}
 
 
@@ -54,6 +56,8 @@ public class CharacterStateSlide : CharacterState
 	{
 		// dust
 		blackboard.feetDust.Stop();
+		// sound
+		blackboard.feetAud.SlideStop();
 	}
 
 
