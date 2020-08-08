@@ -1532,6 +1532,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3629239984483212349, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629239984483212349, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 317c28a0496d68840b96fe05fdf4c2fa, type: 3}
 --- !u!1001 &6375249709695215769
@@ -1541,6 +1551,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1155851557, guid: 98a36c709e0188649a9c5a194535a58a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9374685
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155851557, guid: 98a36c709e0188649a9c5a194535a58a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.125063
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318135169, guid: 98a36c709e0188649a9c5a194535a58a, type: 3}
+      propertyPath: m_Size.x
+      value: 2.125063
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318135169, guid: 98a36c709e0188649a9c5a194535a58a, type: 3}
+      propertyPath: m_Center.x
+      value: -0.9374685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375249708308178970, guid: 98a36c709e0188649a9c5a194535a58a,
+        type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.9374685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375249708308178970, guid: 98a36c709e0188649a9c5a194535a58a,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2.125063
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375249708308178970, guid: 98a36c709e0188649a9c5a194535a58a,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 41.231667
+      objectReference: {fileID: 0}
     - target: {fileID: 6375249708446289177, guid: 98a36c709e0188649a9c5a194535a58a,
         type: 3}
       propertyPath: m_Name
