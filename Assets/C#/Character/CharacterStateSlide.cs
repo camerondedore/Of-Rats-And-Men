@@ -43,6 +43,7 @@ public class CharacterStateSlide : CharacterState
 		clear = false;
 		clearTimeStart = Time.time;
 		// animate
+		blackboard.anim.ResetTrigger("jump");
 		blackboard.anim.SetTrigger("slide");
 		// dust
 		blackboard.feetDust.Play();

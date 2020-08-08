@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimatorFootSteps : MonoBehaviour
+public class CharacterAudio : MonoBehaviour
 {
     
 	public AudioClip stepSound,
-		slideSound;
+		slideSound,
+		jumpSound,
+		landSound;
 	public float randomPitch = 0.3f;
 	AudioSourceController aud;
 
@@ -39,5 +41,19 @@ public class AnimatorFootSteps : MonoBehaviour
 	{
 		aud.source.clip = null;
 		aud.source.Stop();
+	}
+
+
+
+	public void PlayJump()
+	{
+		aud.PlayOneShot(jumpSound);
+	}
+
+
+
+	public void PlayLand()
+	{
+		aud.PlayOneShot(landSound);
 	}
 }

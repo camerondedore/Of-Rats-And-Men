@@ -40,6 +40,8 @@ public class CharacterStateJump : CharacterState
 		blackboard.anim.SetTrigger("jump");
 		// set tics
 		tics = 4;
+		// sound
+		blackboard.feetAud.PlayJump();
 	}
 
 

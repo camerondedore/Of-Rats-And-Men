@@ -10256,8 +10256,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d245c63d3ff16a34dbe5686ec80f361c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepSound: {fileID: 8300000, guid: 41daf77c07d2b634c8cd58d8fc4382d1, type: 3}
+  stepSound: {fileID: 8300000, guid: 74bf4ee7202958e4b89b1cc776079de0, type: 3}
   slideSound: {fileID: 8300000, guid: 1c5e97e3edd9dbd498df5e66254c9b13, type: 3}
+  jumpSound: {fileID: 8300000, guid: 054f10744dc0a3b4cb6629cc5c379ae6, type: 3}
+  landSound: {fileID: 8300000, guid: 353a6266f8d8d1f48a664ddfde4f39ed, type: 3}
   randomPitch: 0.3
 --- !u!1001 &3431463184550109160
 PrefabInstance:

@@ -17,7 +17,7 @@ public class CharacterBlackboard : MonoBehaviour
 	public Animator anim;
 	public VelocityTracker tracker;
 	public ParticleSystem feetDust;
-	public AnimatorFootSteps feetAud;
+	public CharacterAudio feetAud;
 	public Transform character,
 		cameraControl;
 	public float speed = 6,

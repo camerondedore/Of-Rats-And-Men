@@ -50,7 +50,10 @@ public class CharacterStateFall : CharacterState
 
 	public override void EndState()
 	{
-
+		// sound
+		blackboard.feetAud.PlayLand();
+		// animate
+		blackboard.anim.SetTrigger("jump");
 	}
 
 
