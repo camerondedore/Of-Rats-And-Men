@@ -10,6 +10,7 @@ public class CharacterAudio : MonoBehaviour
 		jumpSound,
 		landSound;
 	AudioSourceController aud;
+	int stepSoundIndex = 0;
 
 
 
@@ -22,7 +23,13 @@ public class CharacterAudio : MonoBehaviour
 
 	public void StepEvent()
 	{
-		var stepSound = stepSounds[Random.Range(0, stepSounds.Length)];
+		var oldStepSoundIndex = stepSoundIndex;
+		while(stepSoundIndex == oldStepSoundIndex)
+		{
+			stepSoundIndex = Random.Range(0, stepSounds.Length);
+		}
+
+		var stepSound = stepSounds[stepSoundIndex];
 		aud.PlayOneShot(stepSound);
 	}
 

@@ -19,7 +19,7 @@ public class DiseaseUI : MonoBehaviour
 
     void Start()
     {	
-
+		diseaseZoneFliesAud.source.time = Random.Range(5f, 20f);
     }
 
     
