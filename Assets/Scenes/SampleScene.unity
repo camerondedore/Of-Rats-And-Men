@@ -6492,6 +6492,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3431463183426512460, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: stepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463183426512460, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: randomPitch
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463183426512460, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: stepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 41daf77c07d2b634c8cd58d8fc4382d1, type: 3}
+    - target: {fileID: 3431463183426512460, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: stepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 74bf4ee7202958e4b89b1cc776079de0, type: 3}
     - target: {fileID: 3431463184108143512, guid: 317c28a0496d68840b96fe05fdf4c2fa,
         type: 3}
       propertyPath: m_Name
@@ -6550,6 +6570,11 @@ PrefabInstance:
     - target: {fileID: 3431463184108143518, guid: 317c28a0496d68840b96fe05fdf4c2fa,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463184815386008, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: DopplerLevel
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -5,11 +5,10 @@ using UnityEngine;
 public class CharacterAudio : MonoBehaviour
 {
     
-	public AudioClip stepSound,
-		slideSound,
+	public AudioClip[] stepSounds;
+	public AudioClip slideSound,
 		jumpSound,
 		landSound;
-	public float randomPitch = 0.3f;
 	AudioSourceController aud;
 
 
@@ -23,7 +22,7 @@ public class CharacterAudio : MonoBehaviour
 
 	public void StepEvent()
 	{
-		aud.RandomizePitch(randomPitch);
+		var stepSound = stepSounds[Random.Range(0, stepSounds.Length)];
 		aud.PlayOneShot(stepSound);
 	}
 
@@ -31,6 +30,7 @@ public class CharacterAudio : MonoBehaviour
 
 	public void SlideStart()
 	{
+		aud.source.pitch = 1;
 		aud.source.clip = slideSound;
 		aud.source.Play();
 	}
@@ -47,6 +47,7 @@ public class CharacterAudio : MonoBehaviour
 
 	public void PlayJump()
 	{
+		aud.source.pitch = 1;
 		aud.PlayOneShot(jumpSound);
 	}
 
@@ -54,6 +55,7 @@ public class CharacterAudio : MonoBehaviour
 
 	public void PlayLand()
 	{
+		aud.source.pitch = 1;
 		aud.PlayOneShot(landSound);
 	}
 }
