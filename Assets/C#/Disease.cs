@@ -59,4 +59,14 @@ public class Disease : MonoBehaviour
 	{
 		return infection / maxInfection;
 	}
+
+
+
+	public float CalculateEffectAmount(float start)
+	{
+		var slope = 1/(1 - start);
+		var x = GetInfectionFraction();
+		return Mathf.Clamp01(
+			slope * x - slope * start);
+	}
 }

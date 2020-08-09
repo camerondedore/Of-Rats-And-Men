@@ -11,15 +11,18 @@ public class DiseaseUI : MonoBehaviour
 	[SerializeField]
 	ParticleSystem diseaseZoneFlies;
 	[SerializeField]
-	AudioSourceController diseaseZoneFliesAud;
-	float fliesAudTargetVolume = 0;
+	Image veinImage;
+	[SerializeField]
+	Animator herbFlashAnim;
+	float veinInfectionStart = 0.33f,
+		oldInfection = 0;
 	bool inZones = false;
 
 
 
     void Start()
     {	
-		diseaseZoneFliesAud.source.time = Random.Range(5f, 20f);
+
     }
 
     
@@ -31,7 +34,7 @@ public class DiseaseUI : MonoBehaviour
 			return;
 		}
 
-		// meter
+		// meter ui
         diseaseBar.localScale = new Vector2(Disease.disease.GetInfectionFraction(), diseaseBar.localScale.y);
 
 		// flies
@@ -40,7 +43,6 @@ public class DiseaseUI : MonoBehaviour
 			inZones = true;
 			// play
 			diseaseZoneFlies.Play();
-			fliesAudTargetVolume = 1;
 		}
 		
 		if(Disease.disease.inZones.Count < 1 && inZones)
@@ -48,10 +50,18 @@ public class DiseaseUI : MonoBehaviour
 			inZones = false;
 			// stop
 			diseaseZoneFlies.Stop();
-			fliesAudTargetVolume = 0;
 		}
 
-		// smooth flies audio
-		diseaseZoneFliesAud.source.volume = Mathf.MoveTowards(diseaseZoneFliesAud.source.volume, fliesAudTargetVolume, Time.deltaTime * 2);
+		// vein ui
+		var newVeinColor = Color.white;
+		newVeinColor.a = Disease.disease.CalculateEffectAmount(veinInfectionStart);
+		veinImage.color = newVeinColor;
+
+		// herb flash ui
+		if(oldInfection > Disease.disease.infection)
+		{
+			herbFlashAnim.SetTrigger("flash");
+		}		
+		oldInfection = Disease.disease.infection;
     }
 }

@@ -41,7 +41,7 @@ public class CharacterStateJump : CharacterState
 		// set tics
 		tics = 4;
 		// sound
-		blackboard.feetAud.PlayJump();
+		blackboard.charAud.PlayJump();
 	}
 
 

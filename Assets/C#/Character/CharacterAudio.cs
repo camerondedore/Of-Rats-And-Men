@@ -8,7 +8,8 @@ public class CharacterAudio : MonoBehaviour
 	public AudioClip[] stepSounds;
 	public AudioClip slideSound,
 		jumpSound,
-		landSound;
+		landSound,
+		dieSound;
 	AudioSourceController aud;
 	int stepSoundIndex = 0;
 
@@ -37,7 +38,6 @@ public class CharacterAudio : MonoBehaviour
 
 	public void SlideStart()
 	{
-		aud.source.pitch = 1;
 		aud.source.clip = slideSound;
 		aud.source.Play();
 	}
@@ -54,7 +54,6 @@ public class CharacterAudio : MonoBehaviour
 
 	public void PlayJump()
 	{
-		aud.source.pitch = 1;
 		aud.PlayOneShot(jumpSound);
 	}
 
@@ -62,7 +61,13 @@ public class CharacterAudio : MonoBehaviour
 
 	public void PlayLand()
 	{
-		aud.source.pitch = 1;
 		aud.PlayOneShot(landSound);
+	}
+
+
+
+	public void PlayDie()
+	{
+		aud.PlayOneShot(dieSound);
 	}
 }

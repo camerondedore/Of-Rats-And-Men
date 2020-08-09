@@ -48,7 +48,7 @@ public class CharacterStateSlide : CharacterState
 		// dust
 		blackboard.feetDust.Play();
 		// sound
-		blackboard.feetAud.SlideStart();
+		blackboard.charAud.SlideStart();
 	}
 
 
@@ -58,7 +58,7 @@ public class CharacterStateSlide : CharacterState
 		// dust
 		blackboard.feetDust.Stop();
 		// sound
-		blackboard.feetAud.SlideStop();
+		blackboard.charAud.SlideStop();
 	}
 
 

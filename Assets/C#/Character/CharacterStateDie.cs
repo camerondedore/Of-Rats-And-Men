@@ -23,7 +23,11 @@ public class CharacterStateDie : CharacterState
 		{						
 			// grounded
 			animated = true;
-			blackboard.anim.SetTrigger("die");			
+			blackboard.anim.SetTrigger("die");
+			// vomit fx
+			blackboard.vomit.Play();	
+			// die audio
+			blackboard.charAud.PlayDie();		
 		}
 	}
 
@@ -33,6 +37,8 @@ public class CharacterStateDie : CharacterState
 	{
 		// enable steps
 		blackboard.agent.stepOffset = blackboard.stepHeight;
+		// anim
+		blackboard.anim.ResetTrigger("jump");
 	}
 
 
