@@ -5496,7 +5496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680c3701664e61e4ba7f62fe59192f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infection: 95
+  infection: 0
   maxInfection: 100
   infectionRate: 1
   infectionZoneRate: 3

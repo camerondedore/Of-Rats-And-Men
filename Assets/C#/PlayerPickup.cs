@@ -11,7 +11,7 @@ public class PlayerPickup : MonoBehaviour
 
 	void OnTriggerEnter(Collider co)
 	{
-		var pickup = co.transform.root.GetComponent<IPickup>();
+		var pickup = co.transform.GetComponent<IPickup>();
 		pickup.Pickup(transform.root);
 	}
 }
