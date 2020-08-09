@@ -28,10 +28,22 @@ public class CharacterStateGrounded : CharacterState
 			blackboard.lookDirection.y = 0;
 		}
 		blackboard.character.forward = Vector3.Slerp(blackboard.character.forward, blackboard.lookDirection, Time.fixedDeltaTime * 15);
-		// animate
+		// get real speed
 		var realVelocity = blackboard.tracker.velocity;
 		realVelocity.y = 0;
-		blackboard.anim.SetFloat("speed", realVelocity.magnitude);
+		var realSpeed = realVelocity.magnitude;
+		// animate
+		blackboard.anim.SetFloat("speed", realSpeed);
+		if(realSpeed > 0.01f)
+		{
+			// run
+			blackboard.anim.SetFloat("timeScale", realSpeed / blackboard.speed);
+		}
+		else
+		{
+			// idle
+			blackboard.anim.SetFloat("timeScale", 1);
+		}
 	}
 
 
