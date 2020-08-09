@@ -5,10 +5,6 @@ using UnityEngine;
 public class GroundChecker : MonoBehaviour
 {
    
-	public float distance = 1f,
-		rayDistance = 1f,
-		radius = 0.2f,
-		maxAngle = 30;
     public LayerMask mask;
 	public RaycastHit checkFeet,
 		checkHead;
@@ -17,8 +13,28 @@ public class GroundChecker : MonoBehaviour
 		isFlatRay,
 		isFlat,
 		headBump;
-	float angle;
+	float distance,
+		rayDistance,
+		radius,
+		maxAngle, 
+		angle;
 	RaycastHit checkRay;
+
+
+
+	void Start()
+	{
+		var controller = transform.root.GetComponent<CharacterController>();
+		
+		// get radius
+		radius = controller.radius;
+		// get distance for sphere cast
+		distance = controller.height * 0.5f - radius + controller.skinWidth + 0.01f;
+		// get distance for ray cast
+		rayDistance = controller.height * 0.5f + controller.stepOffset + controller.skinWidth + 0.01f;
+		// get angle
+		maxAngle = controller.slopeLimit;
+	}
 
 
 
