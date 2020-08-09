@@ -5064,7 +5064,7 @@ GameObject:
   - component: {fileID: 6461259071972631540}
   - component: {fileID: 6461259071972631541}
   - component: {fileID: 6461259071972631538}
-  m_Layer: 2
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5369,7 +5369,7 @@ GameObject:
   - component: {fileID: 6461259072472858524}
   - component: {fileID: 6461259072472858526}
   - component: {fileID: 6461259072472858527}
-  m_Layer: 2
+  m_Layer: 5
   m_Name: Infection Bar Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5444,7 +5444,7 @@ GameObject:
   - component: {fileID: 6461259072530822334}
   - component: {fileID: 6461259072530822304}
   - component: {fileID: 6461259072530822305}
-  m_Layer: 2
+  m_Layer: 5
   m_Name: Infection Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5517,7 +5517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6461259072845334361}
   - component: {fileID: 6461259072845334360}
-  m_Layer: 2
+  m_Layer: 5
   m_Name: Disease UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
