@@ -41,7 +41,7 @@ public class Pause : MonoBehaviour
 			Time.fixedDeltaTime = 0.02f;
 		}
 		
-		//Cursor.visible = !Cursor.visible ? true : false;
+		Cursor.visible = !Cursor.visible ? true : false;
 		Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;		
 	}
 
@@ -61,7 +61,7 @@ public class Pause : MonoBehaviour
 			Time.fixedDeltaTime = 0.02f;
 		}
 		
-		//Cursor.visible = paused ? true : false;
+		Cursor.visible = paused ? true : false;
 		Cursor.lockState = paused ? CursorLockMode.None : CursorLockMode.Locked;
 	}
 }
