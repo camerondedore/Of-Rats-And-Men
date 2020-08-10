@@ -14,13 +14,22 @@ public class CharacterStateJump : CharacterState
 		// get input
 		var moveDir = blackboard.cameraControl.TransformDirection(blackboard.input.moveDirection).normalized;
 		// project input on ground
-		blackboard.targetVelocity = Vector3.ProjectOnPlane(moveDir, blackboard.feet.checkFeet.normal);
+		if(blackboard.feet.isGrounded)
+		{
+			// grounded
+			blackboard.targetVelocity = Vector3.ProjectOnPlane(moveDir, blackboard.feet.checkFeet.normal).normalized;
+		}
+		else if(blackboard.feet.isGroundedRay)
+		{
+			// ray grounded 
+			blackboard.targetVelocity = Vector3.ProjectOnPlane(moveDir, blackboard.feet.checkFeetRay.normal).normalized;
+		}
 		// smooth velocity to target velocity
 		blackboard.velocity = Vector3.Lerp(blackboard.velocity, blackboard.targetVelocity * blackboard.speed, Time.fixedDeltaTime * blackboard.groundResponseSpeed);
 		// set constant downward velocity
-		blackboard.y = -1;		
+		blackboard.y = 1f;		
 		// move
-		blackboard.agent.Move((blackboard.velocity + Physics.gravity.normalized * -blackboard.y) * Time.fixedDeltaTime);
+		blackboard.agent.Move((blackboard.velocity + Physics.gravity.normalized * blackboard.y) * Time.fixedDeltaTime);
 		// look
 		if(blackboard.targetVelocity.sqrMagnitude > 0.1f)
 		{

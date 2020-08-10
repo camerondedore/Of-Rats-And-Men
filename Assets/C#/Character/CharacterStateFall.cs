@@ -54,6 +54,7 @@ public class CharacterStateFall : CharacterState
 		blackboard.charAud.PlayLand();
 		// animate
 		blackboard.anim.SetTrigger("jump");
+		blackboard.anim.ResetTrigger("fall");
 	}
 
 
