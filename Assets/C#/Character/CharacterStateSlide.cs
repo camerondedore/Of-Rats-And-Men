@@ -5,7 +5,9 @@ using UnityEngine;
 public class CharacterStateSlide : CharacterState
 {
     
-	float clearTimeStart = 0;
+	Vector3 oldPosition;
+	float clearTimeStart = 0,
+		ticsToJump = 0;
 	bool clear = false;
 
 
@@ -34,6 +36,17 @@ public class CharacterStateSlide : CharacterState
 			// dust
 			blackboard.feetDust.Stop();
 		}
+
+		// check position
+		if(oldPosition == transform.root.position)
+		{
+			ticsToJump++;
+		}
+		else
+		{
+			oldPosition = transform.root.position;
+			ticsToJump = 0;
+		}
 	}
 
 
@@ -42,6 +55,7 @@ public class CharacterStateSlide : CharacterState
 	{
 		clear = false;
 		clearTimeStart = Time.time;
+		ticsToJump = 0;
 		// animate
 		blackboard.anim.ResetTrigger("jump");
 		blackboard.anim.SetTrigger("slide");
@@ -65,6 +79,11 @@ public class CharacterStateSlide : CharacterState
 
 	public override State Transition()
 	{
+		if(ticsToJump > 20)
+		{
+			return blackboard.jumpState;
+		}
+
 		if(blackboard.feet.isGrounded || Time.time < clearTimeStart + 0.1f)
 		{
 			if(blackboard.feet.isFlat && blackboard.feet.isFlatRay)
