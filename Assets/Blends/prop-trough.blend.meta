@@ -1,35 +1,14 @@
 fileFormatVersion: 2
-guid: 6188481d6cf470149806051cec6136ba
+guid: 99c113ab7b81e81479809c4cbc5605e0
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: 1989289236423521904
     second: Default Take
-  - first:
-      74: -5798689881400853346
-    second: char-plague-doctor-die
-  - first:
-      74: 6256036893314638841
-    second: char-plague-doctor-fall
-  - first:
-      74: 2844236723831221331
-    second: char-plague-doctor-idle
-  - first:
-      74: -7309264221274712725
-    second: char-plague-doctor-jump
-  - first:
-      74: 4388366911978883411
-    second: char-plague-doctor-rise
-  - first:
-      74: 4198990394637229396
-    second: char-plague-doctor-run
-  - first:
-      74: 5470475034975042699
-    second: char-plague-doctor-slide
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
