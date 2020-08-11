@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3459448488308896560}
   - component: {fileID: 6566060278402031329}
   m_Layer: 0
-  m_Name: building-windmill
+  m_Name: Building Windmill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9d2d9853fa76ffd41a4ffdc7618e302a, type: 2}
+  - {fileID: 2100000, guid: 01e6b49cb4fbcfe4c8a46f8c9b4918d1, type: 2}
   - {fileID: 2100000, guid: 684fb278b271d434a811b786dd3e5c68, type: 2}
   - {fileID: 2100000, guid: bb948447ee443e742b53efa9c2e90eb1, type: 2}
   - {fileID: 2100000, guid: 41a3df8efd1d00641b8e7328e03ed712, type: 2}
