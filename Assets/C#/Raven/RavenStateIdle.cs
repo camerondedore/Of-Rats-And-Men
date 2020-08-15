@@ -7,7 +7,7 @@ public class RavenStateIdle : RavenState
     
 	float startTime = 0,
 		idleTime = 10;
-	int call = 1;
+	int action = 1;
 
 
 	
@@ -21,7 +21,7 @@ public class RavenStateIdle : RavenState
 	public override void StartState()
 	{
 		startTime = Time.time;
-		call = Random.Range(0,2);
+		action = Random.Range(0,4);
 		idleTime = Random.Range(3f,8f);
 		// animation
 		blackboard.anim.SetTrigger("idle");
@@ -41,14 +41,14 @@ public class RavenStateIdle : RavenState
 	{
 		if(Time.time > startTime + idleTime)
 		{
-			if(call == 1)
+			if(action == 0)
 			{
-				// call
-				return blackboard.callState;
+				// preen
+				return blackboard.preenState;
 			}
 
-			// preen
-			return blackboard.preenState;
+			// call
+			return blackboard.callState;			
 		}
 
 		return this;
