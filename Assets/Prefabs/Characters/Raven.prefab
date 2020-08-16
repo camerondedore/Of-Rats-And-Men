@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 6885699848124509502}
   - component: {fileID: 6885699848124509501}
   - component: {fileID: 6885699848124509500}
+  - component: {fileID: 3766487744663507329}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -190,7 +191,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 30
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -282,6 +283,40 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 79964a860696b6d4da13aca293de6a39, type: 3}
   - {fileID: 8300000, guid: f0c688e549743b747b69dc73f546399f, type: 3}
   - {fileID: 8300000, guid: 37df37829dc2131449f3f594c04ceea6, type: 3}
+--- !u!169 &3766487744663507329
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6885699848124509490}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0044937134
+      value: 0.9966965
+      inSlope: -7.3062887
+      outSlope: -7.3062887
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.09706607
+    - serializedVersion: 3
+      time: 1
+      value: 0.026428223
+      inSlope: -0.11806668
+      outSlope: -0.11806668
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.56207633
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6885699848862220133
 GameObject:
   m_ObjectHideFlags: 0

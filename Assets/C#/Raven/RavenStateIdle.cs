@@ -21,8 +21,8 @@ public class RavenStateIdle : RavenState
 	public override void StartState()
 	{
 		startTime = Time.time;
-		action = Random.Range(0,4);
-		idleTime = Random.Range(3f,8f);
+		action = Random.Range(0, 6);
+		idleTime = Random.Range(2f, 6f);
 		// animation
 		blackboard.anim.SetTrigger("idle");
 		blackboard.anim.SetFloat("idleOffset", Random.Range(0f, 1f));
