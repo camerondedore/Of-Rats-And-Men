@@ -5452,7 +5452,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 1
-  speed: 50
+  speed: 20
 --- !u!1 &3431463184701308004
 GameObject:
   m_ObjectHideFlags: 0
