@@ -38,7 +38,7 @@ public class CharacterStateSlide : CharacterState
 		}
 
 		// check position
-		if(oldPosition == transform.root.position)
+		if(Vector3.Distance(oldPosition, transform.root.position) < 0.1f)
 		{
 			ticsToJump++;
 		}
