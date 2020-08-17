@@ -6,8 +6,8 @@ public class RavenStateIdle : RavenState
 {
     
 	float startTime = 0,
-		idleTime = 10;
-	int action = 1;
+		idleTime = 10,
+		action = 1;
 
 
 	
@@ -21,7 +21,7 @@ public class RavenStateIdle : RavenState
 	public override void StartState()
 	{
 		startTime = Time.time;
-		action = Random.Range(0, 6);
+		action = Random.Range(0f, 1f);
 		idleTime = Random.Range(2f, 6f);
 		// animation
 		blackboard.anim.SetTrigger("idle");
@@ -41,7 +41,7 @@ public class RavenStateIdle : RavenState
 	{
 		if(Time.time > startTime + idleTime)
 		{
-			if(action == 0)
+			if(action < 0.3f)
 			{
 				// preen
 				return blackboard.preenState;
