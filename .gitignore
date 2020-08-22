@@ -4,3 +4,6 @@
 !.gitignore
 !/Assets/
 !/ProjectSettings/
+
+*.blend1
+*.blend1.meta
