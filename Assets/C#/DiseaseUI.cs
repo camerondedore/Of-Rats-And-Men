@@ -29,7 +29,7 @@ public class DiseaseUI : MonoBehaviour
 
     void Update()
     {
-		if(Time.timeScale <= 0)
+		if(Time.timeScale <= 0 || Disease.disease == null)
 		{
 			return;
 		}

@@ -11,7 +11,7 @@ public class Look : MonoBehaviour
 	[SerializeField]
 	float lookLimit = 30;
 	Vector2 lookAngles,
-		lookVector;
+		lookRawChange;
 
 
 
@@ -25,9 +25,9 @@ public class Look : MonoBehaviour
 	void FixedUpdate()
 	{
 		// apply look
-		if(lookVector.sqrMagnitude > 0)
+		if(lookRawChange.sqrMagnitude > 0)
 		{
-			var change = lookVector * lookSensitivity * Time.fixedDeltaTime;
+			var change = lookRawChange * lookSensitivity * Time.fixedDeltaTime;
 			lookAngles += change;
 			lookAngles.x = Mathf.Clamp(lookAngles.x, -lookLimit, lookLimit);
 
@@ -48,7 +48,7 @@ public class Look : MonoBehaviour
 	{
 		var change = -PlayerInput.look;
 		change.y *= -1;
-		lookVector = change;
+		lookRawChange = change;
 	}
 
 

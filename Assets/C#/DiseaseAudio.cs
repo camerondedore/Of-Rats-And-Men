@@ -27,6 +27,11 @@ public class DiseaseAudio : MonoBehaviour
     
     void Update()
     {
+		if(Time.timeScale <= 0 || Disease.disease == null)
+		{
+			return;
+		}
+
         // flies
 		if(Disease.disease.inZones.Count > 0 && !inZones)
 		{
