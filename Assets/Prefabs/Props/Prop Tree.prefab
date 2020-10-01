@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5250426619354200237}
   - component: {fileID: 4388176024892625523}
   m_Layer: 0
-  m_Name: prop-tree
+  m_Name: Prop Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +90,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 4388176024892625520}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.4
   m_Height: 7.934961
   m_Direction: 1
