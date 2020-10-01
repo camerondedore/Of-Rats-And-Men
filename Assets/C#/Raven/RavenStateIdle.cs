@@ -26,6 +26,11 @@ public class RavenStateIdle : RavenState
 		// animation
 		blackboard.anim.SetTrigger("idle");
 		blackboard.anim.SetFloat("idleOffset", Random.Range(0f, 1f));
+		// block excessive preen
+		if(blackboard.preenCount >= 2)
+		{
+			action = 1;
+		}
 	}
 
 

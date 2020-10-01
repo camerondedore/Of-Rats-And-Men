@@ -21,6 +21,7 @@ public class RavenStatePreen : RavenState
 	{
 		preenStartTime = Time.time;
 		preenTime = Random.Range(1f, 3f);
+		blackboard.preenCount++;
 		// animation
 		blackboard.anim.SetTrigger("preen");
 	}

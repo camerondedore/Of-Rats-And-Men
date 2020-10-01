@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3334026248264888882}
   - component: {fileID: 8258824750097415755}
   - component: {fileID: 877973897273242175}
-  - component: {fileID: 2846214850293057678}
   m_Layer: 0
   m_Name: Prop Tree Half Dead
   m_TagString: Untagged
@@ -81,17 +80,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &2846214850293057678
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2846214850293057673}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.4
-  m_Height: 7.766663
-  m_Direction: 1
-  m_Center: {x: -0.016378999, y: 3.3833315, z: 0.013170004}

@@ -10,4 +10,5 @@ public class RavenBlackboard : MonoBehaviour
 		preenState;
 	public Animator anim;
 	public RavenAudio aud;
+	public int preenCount;
 }

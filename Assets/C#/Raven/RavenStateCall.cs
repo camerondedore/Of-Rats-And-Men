@@ -28,6 +28,7 @@ public class RavenStateCall : RavenState
 	public override void StartState()
 	{
 		calls = Random.Range(1, 4);
+		blackboard.preenCount = 0;
 	}
 
 
