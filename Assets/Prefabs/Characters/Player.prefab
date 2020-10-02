@@ -5291,7 +5291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4097
   angle: 0
   angleRay: 0
   isGroundedRay: 1

@@ -8,6 +8,8 @@ public class PropBrush : MonoBehaviour
 	[SerializeField]
 	GameObject[] props;
 	[SerializeField]
+	LayerMask mask;
+	[SerializeField]
 	float xzScaleMin,
 		xzScaleMax,
 		yScaleMin,
@@ -31,7 +33,7 @@ public class PropBrush : MonoBehaviour
 		// draw
 		if(Input.GetKeyDown(KeyCode.Mouse0))
 		{
-			Physics.Raycast(transform.position, transform.forward, out rayHit, 100);
+			Physics.Raycast(transform.position, transform.forward, out rayHit, 100, mask);
 
 			if(rayHit.collider != null)
 			{
