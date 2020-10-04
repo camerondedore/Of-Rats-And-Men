@@ -5451,7 +5451,7 @@ MonoBehaviour:
   cameraPoint: {fileID: 3431463183730682448}
   mask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4097
   speed: 20
 --- !u!1 &3431463184701308004
 GameObject:

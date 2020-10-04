@@ -916,7 +916,7 @@ GameObject:
   - component: {fileID: 4937119785576896229}
   - component: {fileID: 7073691159507913939}
   - component: {fileID: 2965851477128044608}
-  m_Layer: 2
+  m_Layer: 1
   m_Name: Flies FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5863,7 +5863,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 4919
   m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5976,6 +5976,9 @@ MonoBehaviour:
   - {fileID: 616199556505416579, guid: f2fac81a4cc96454ea952a96df301b4d, type: 3}
   - {fileID: 6733181896063773157, guid: 1865e3dea014d2845b5ed2bf80893557, type: 3}
   - {fileID: 4388176024892625520, guid: e0ea80d8555d0ba48b40948109daca1c, type: 3}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
   xzScaleMin: 0.85
   xzScaleMax: 1.15
   yScaleMin: 0.9
