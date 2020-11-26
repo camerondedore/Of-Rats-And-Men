@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bark Wind
-  m_Shader: {fileID: 4800000, guid: bc3f66e9edeb6134db23a1363fa0780e, type: 3}
+  m_Name: Leaves Wind Tall
+  m_Shader: {fileID: 4800000, guid: c77f98216566c754480e6bcbb1c7fcde, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: dc8eea7b2800e1d4fa78a5b126f25965, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -63,7 +63,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 1
     - _MinY: 0.5
     - _Mode: 0
     - _NormalY: 5
@@ -72,7 +72,7 @@ Material:
     - _Scale: 5
     - _Smooth: 0
     - _SmoothnessTextureChannel: 0
-    - _Spec: 0.5
+    - _Spec: 1
     - _SpecularHighlights: 1
     - _Speed: 0.75
     - _SrcBlend: 1
@@ -83,6 +83,6 @@ Material:
     - _yScale: 0.5
     - _zScale: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.43507162, g: 0.4627451, b: 0.19759215, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 0.20364009, g: 0.23584908, b: 0.14128695, a: 1}
