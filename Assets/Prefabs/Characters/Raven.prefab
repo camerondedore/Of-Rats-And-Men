@@ -84,6 +84,7 @@ MonoBehaviour:
   preenState: {fileID: 6885699847603667040}
   anim: {fileID: 6885699848213969070}
   aud: {fileID: 6885699848124509500}
+  preenCount: 0
 --- !u!114 &6885699847603667042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +180,8 @@ AudioSource:
   m_GameObject: {fileID: 6885699848124509490}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7463175149713116062, guid: 1e383dca7174f5c44870c0a73b63b97a,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

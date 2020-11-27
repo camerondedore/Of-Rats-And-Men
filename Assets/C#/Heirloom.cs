@@ -6,7 +6,10 @@ public class Heirloom : MonoBehaviour, IPickup
 {
     
 	[SerializeField]
+	AudioClip pickupSound;
+	[SerializeField]
 	string heirloomName;
+	AudioSource aud;
 
 
 
@@ -17,6 +20,8 @@ public class Heirloom : MonoBehaviour, IPickup
 		{
 			Destroy(gameObject);
 		}
+
+		aud = GetComponent<AudioSource>();
 	}
 
 
@@ -32,7 +37,12 @@ public class Heirloom : MonoBehaviour, IPickup
 	{
 		// save object to collection list
 		Heirlooms.CollectHeirloom(heirloomName);
-		Destroy(gameObject);
+		// destroy
+		aud.PlayOneShot(pickupSound);
+		GetComponent<Renderer>().enabled = false;
+		GetComponent<Collider>().enabled = false;
+		GetComponentInChildren<ParticleSystem>().Stop();
+		Destroy(gameObject, 10);
 	}
 }
 
