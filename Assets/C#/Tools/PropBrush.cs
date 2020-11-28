@@ -52,10 +52,13 @@ public class PropBrush : MonoBehaviour
 				prop.transform.rotation = Quaternion.Euler(new Vector3(xRot, yRot, zRot));
 
 				// get new prop
-				var lastPropIndex = propIndex;
-				while(lastPropIndex == propIndex)
+				if(props.Length > 1)
 				{
-					propIndex = Random.Range(0, props.Length);
+					var lastPropIndex = propIndex;
+					while(lastPropIndex == propIndex)
+					{
+						propIndex = Random.Range(0, props.Length);
+					}
 				}
 			}
 		}
