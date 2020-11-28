@@ -19,6 +19,6 @@ public class Windmill : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Rotate(0, 0, -speed * Time.fixedDeltaTime);
+        transform.Rotate(0, 0, speed * Time.fixedDeltaTime);
     }
 }

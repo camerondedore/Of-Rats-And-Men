@@ -8,6 +8,8 @@ public class PropBrush : MonoBehaviour
 	[SerializeField]
 	GameObject[] props;
 	[SerializeField]
+	GameObject crosshair;
+	[SerializeField]
 	LayerMask mask;
 	[SerializeField]
 	float xzScaleMin,
@@ -16,7 +18,7 @@ public class PropBrush : MonoBehaviour
 		yScaleMax,
 		rotationMax;
 	RaycastHit rayHit;
-	GameObject lastPropPlaced;
+	List<GameObject> propsPlaced = new List<GameObject>();
 	int propIndex;
 
 
@@ -24,6 +26,7 @@ public class PropBrush : MonoBehaviour
 	void Start()
 	{
 		propIndex = Random.Range(0, props.Length);
+		crosshair.SetActive(true);
 	}
 
 
@@ -38,7 +41,7 @@ public class PropBrush : MonoBehaviour
 			if(rayHit.collider != null)
 			{
 				var prop = Instantiate(props[propIndex], rayHit.point, Quaternion.identity) as GameObject;
-				lastPropPlaced = prop;
+				propsPlaced.Add(prop);
 				
 				// apply scale
 				var xzScale = Random.Range(xzScaleMin, xzScaleMax);
@@ -66,7 +69,9 @@ public class PropBrush : MonoBehaviour
 		// delete
 		if(Input.GetKeyDown(KeyCode.Mouse1))
 		{
-			Destroy(lastPropPlaced);
+			var propToDestroy = propsPlaced[propsPlaced.Count - 1];
+			propsPlaced.Remove(propToDestroy);
+			Destroy(propToDestroy);
 		}
 	}
 }

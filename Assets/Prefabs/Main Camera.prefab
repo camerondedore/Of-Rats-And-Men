@@ -1062,17 +1062,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2726204245495153102}
   m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0, z: -9}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4641861912350209245}
   m_Father: {fileID: 6461259071972631539}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -222.5, y: -116}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763991138687838856
 MonoBehaviour:
@@ -1114,7 +1114,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3365817473494239046}
   m_LocalRotation: {x: -0.38268343, y: -0, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0, z: -75.66042}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6044812477857253837}
@@ -1122,8 +1122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 222.5, y: 88.38835}
-  m_SizeDelta: {x: 445, y: 250}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5652255842411213122
 CanvasRenderer:
@@ -6249,20 +6249,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   props:
-  - {fileID: 3597669303301671191, guid: aaf127198ee2cfe439f8d3dd328e0bff, type: 3}
-  - {fileID: 2846214850293057673, guid: 606e71b0de1911c4789f8b856e210e93, type: 3}
-  - {fileID: 4966729358181454809, guid: a929c41a0f04d444f832aaf975d12635, type: 3}
-  - {fileID: 616199556505416579, guid: f2fac81a4cc96454ea952a96df301b4d, type: 3}
-  - {fileID: 6733181896063773157, guid: 1865e3dea014d2845b5ed2bf80893557, type: 3}
-  - {fileID: 4388176024892625520, guid: e0ea80d8555d0ba48b40948109daca1c, type: 3}
+  - {fileID: 7048573025514184343, guid: 4ca5dbbb3aa5e3a459924e7a8baf2124, type: 3}
+  crosshair: {fileID: 2112075951}
   mask:
     serializedVersion: 2
-    m_Bits: 0
-  xzScaleMin: 0.85
-  xzScaleMax: 1.15
-  yScaleMin: 0.9
-  yScaleMax: 1.1
-  rotationMax: 3
+    m_Bits: 4097
+  xzScaleMin: 0.8
+  xzScaleMax: 1.5
+  yScaleMin: 0.8
+  yScaleMax: 1.5
+  rotationMax: 2
 --- !u!1 &6461259072463001656
 GameObject:
   m_ObjectHideFlags: 0
@@ -6681,7 +6677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0635174693097b47954079dbccbba9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heirloomAud: {fileID: 0}
+  heirloomAud: {fileID: 7637489323498100712}
 --- !u!1 &8957962469502581188
 GameObject:
   m_ObjectHideFlags: 0
