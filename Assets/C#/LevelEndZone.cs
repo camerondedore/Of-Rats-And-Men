@@ -8,6 +8,8 @@ public class LevelEndZone : MonoBehaviour
 	[SerializeField]
 	Animator uiAnim;
 	[SerializeField]
+	AudioSourceController aud;
+	[SerializeField]
 	string nextLevelName = "";
 	float animTime = 1.75f,
 		triggerTime = Mathf.Infinity;
@@ -28,5 +30,6 @@ public class LevelEndZone : MonoBehaviour
 	{
 		triggerTime = Time.time;
 		uiAnim.SetTrigger("load");
+		aud.source.Play();
 	}
 }
