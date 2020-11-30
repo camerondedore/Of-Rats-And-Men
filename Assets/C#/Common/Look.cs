@@ -5,7 +5,7 @@ using UnityEngine;
 public class Look : MonoBehaviour
 {
 
-	public static float lookSensitivity = 100;
+	public static float lookSensitivity = 10;
 	[SerializeField] 
 	Transform head = null;
 	[SerializeField]
