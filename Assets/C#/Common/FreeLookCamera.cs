@@ -6,7 +6,7 @@ public class FreeLookCamera : MonoBehaviour
 {
 
 	[SerializeField]
-	float lookSensitivity = 400,
+	float lookSensitivity = 10,
 		speed = 4;
 	Vector2 lookAngles,
 		lookRawChange;

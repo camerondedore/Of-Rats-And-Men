@@ -19,7 +19,10 @@ public class PropBrush : MonoBehaviour
 		rotationMax;
 	RaycastHit rayHit;
 	List<GameObject> propsPlaced = new List<GameObject>();
+	Disconnector disconnector1 = new Disconnector();
+	Disconnector disconnector2 = new Disconnector();
 	int propIndex;
+
 
 
 
@@ -34,7 +37,7 @@ public class PropBrush : MonoBehaviour
 	void Update()
 	{
 		// draw
-		if(Input.GetKeyDown(KeyCode.Mouse0))
+		if (disconnector1.Trip(PlayerInput.fire1))
 		{
 			Physics.Raycast(transform.position, transform.forward, out rayHit, 100, mask);
 
@@ -67,7 +70,7 @@ public class PropBrush : MonoBehaviour
 		}
 
 		// delete
-		if(Input.GetKeyDown(KeyCode.Mouse1))
+		if (disconnector2.Trip(PlayerInput.fire2) && props.Length > 0)
 		{
 			var propToDestroy = propsPlaced[propsPlaced.Count - 1];
 			propsPlaced.Remove(propToDestroy);

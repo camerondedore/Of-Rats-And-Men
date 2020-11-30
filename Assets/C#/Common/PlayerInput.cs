@@ -8,7 +8,8 @@ public class PlayerInput : MonoBehaviour
     
 	public static Vector2 move,
 		look;
-	public static float fire,
+	public static float fire1,
+		fire2,
 		//aim,
 		//reload,
 		pause,
@@ -29,6 +30,20 @@ public class PlayerInput : MonoBehaviour
 		//reload = Input.GetAxisRaw("Reload");
 		//pause = Input.GetAxisRaw("Pause");
     }
+
+
+
+	public void OnFire1(InputValue value)
+	{
+		fire1 = value.Get<float>();
+	}
+
+
+
+	public void OnFire2(InputValue value)
+	{
+		fire2 = value.Get<float>();
+	}
 
 
 
