@@ -26,8 +26,8 @@ public class UILayerMovement : MonoBehaviour
 
     void Update()
     {
-        x += Input.GetAxisRaw("Mouse X") * Time.deltaTime * inputSpeed;
-        y += Input.GetAxisRaw("Mouse Y") * Time.deltaTime * inputSpeed;
+        x += MenuInput.look.x * Time.deltaTime * inputSpeed;
+        y += MenuInput.look.y * Time.deltaTime * inputSpeed;
 
 		x = Mathf.Clamp(x, -maxDisplacement, maxDisplacement);
 		y = Mathf.Clamp(y, -maxDisplacement, maxDisplacement);

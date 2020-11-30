@@ -1,0 +1,33 @@
+{
+    "name": "Menu",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "156ea7c4-658b-4f4a-9e7c-bd3ece166470",
+            "actions": [
+                {
+                    "name": "Mouse",
+                    "type": "Value",
+                    "id": "67ef2a28-c187-4c32-b131-a5f92f0eaf62",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1fc00e3f-eef1-45cf-8d21-a736e0282e96",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
