@@ -25,7 +25,8 @@ public class CharacterBlackboard : MonoBehaviour
 		jumpHeight = 2,
 		groundResponseSpeed = 15,
 		fallResponseSpeed = 5,
-		stepHeight = 0.3f;
+		stepHeight = 0.3f,
+		maxSlope = 80;
 	[HideInInspector]
 	public float y;
 	[HideInInspector]

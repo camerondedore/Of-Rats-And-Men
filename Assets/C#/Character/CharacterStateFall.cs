@@ -23,7 +23,18 @@ public class CharacterStateFall : CharacterState
 		// apply acceleration due to gravity
 		blackboard.y -= Mathf.Abs(Physics.gravity.y) * Time.fixedDeltaTime;
 		// move
-		blackboard.agent.Move((blackboard.velocity + Physics.gravity.normalized * -blackboard.y) * Time.fixedDeltaTime);
+		if(blackboard.feet.isGrounded && blackboard.y < 0 && blackboard.feet.angle > blackboard.maxSlope)
+		{
+			// project fall if rubbing against near-vertical wall
+			var originalMovement = (blackboard.velocity + Physics.gravity.normalized * -blackboard.y);
+			var deflectedMovement = Vector3.ProjectOnPlane(originalMovement , blackboard.feet.checkFeet.normal);
+			//deflectedMovement = deflectedMovement.normalized * originalMovement.magnitude;
+			blackboard.agent.Move(deflectedMovement * Time.fixedDeltaTime);
+		}
+		else
+		{
+			blackboard.agent.Move((blackboard.velocity + Physics.gravity.normalized * -blackboard.y) * Time.fixedDeltaTime);
+		}
 		// look
 		if(blackboard.targetVelocity.sqrMagnitude > 0.1f)
 		{
@@ -61,7 +72,7 @@ public class CharacterStateFall : CharacterState
 
 	public override State Transition()
 	{
-		if(blackboard.feet.isGrounded && blackboard.y < 0)
+		if(blackboard.feet.isGrounded && blackboard.y < 0 && blackboard.feet.angle < blackboard.maxSlope)
 		{
 			if(!blackboard.feet.isFlat && !blackboard.feet.isFlatRay)
 			{
