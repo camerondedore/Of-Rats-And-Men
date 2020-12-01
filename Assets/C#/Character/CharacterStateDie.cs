@@ -5,6 +5,8 @@ using UnityEngine;
 public class CharacterStateDie : CharacterState
 {
 
+	float restartDelay = 2.75f,
+		deathTime = Mathf.Infinity;
 	bool animated = false;
 
 
@@ -28,7 +30,14 @@ public class CharacterStateDie : CharacterState
 			// vomit fx
 			blackboard.vomit.Play();	
 			// die audio
-			blackboard.charAud.PlayDie();		
+			blackboard.charAud.PlayDie();	
+			// get death time
+			deathTime = Time.time;	
+		}
+
+		if(deathTime + restartDelay < Time.time)
+		{
+			SceneLoader.RestartLevel();
 		}
 	}
 

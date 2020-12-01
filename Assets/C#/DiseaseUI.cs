@@ -13,10 +13,12 @@ public class DiseaseUI : MonoBehaviour
 	[SerializeField]
 	Image veinImage;
 	[SerializeField]
-	Animator herbFlashAnim;
+	Animator herbFlashAnim,
+		deathFadeAnim;
 	float veinInfectionStart = 0.33f,
 		oldInfection = 0;
-	bool inZones = false;
+	bool inZones = false,
+		dead = false;
 
 
 
@@ -62,6 +64,14 @@ public class DiseaseUI : MonoBehaviour
 		{
 			herbFlashAnim.SetTrigger("flash");
 		}		
+
+		// die
+		if(!dead && Disease.disease.infection >= 100)
+		{
+			dead = true;
+			deathFadeAnim.SetTrigger("die");
+		}
+
 		oldInfection = Disease.disease.infection;
     }
 }

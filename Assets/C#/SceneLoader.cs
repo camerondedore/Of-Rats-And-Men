@@ -14,4 +14,12 @@ public class SceneLoader : MonoBehaviour
 	{
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 	}
+
+
+
+	public static void RestartLevel()
+	{
+		var currentLevel = SceneManager.GetActiveScene().name;
+		LoadLevel(currentLevel);
+	}
 }
