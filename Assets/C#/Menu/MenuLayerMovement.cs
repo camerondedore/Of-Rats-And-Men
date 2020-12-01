@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class UILayerMovement : MonoBehaviour
+public class MenuLayerMovement : MonoBehaviour
 {
     
 	[SerializeField]

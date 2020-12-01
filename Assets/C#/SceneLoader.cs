@@ -22,4 +22,11 @@ public class SceneLoader : MonoBehaviour
 		var currentLevel = SceneManager.GetActiveScene().name;
 		LoadLevel(currentLevel);
 	}
+
+
+
+	public static void Quit()
+	{
+		Application.Quit();
+	}
 }
