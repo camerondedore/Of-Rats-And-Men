@@ -74,7 +74,7 @@ public class CharacterStateGrounded : CharacterState
 
 	public override State Transition()
 	{
-		if(blackboard.feet.isGrounded || blackboard.feet.isGroundedRay)
+		if((blackboard.feet.isGrounded || blackboard.feet.isGroundedRay) && blackboard.feet.angle < blackboard.maxSlope)
 		{
 			if(blackboard.input.jump > 0 && (blackboard.feet.isFlat || blackboard.feet.isFlatRay))
 			{

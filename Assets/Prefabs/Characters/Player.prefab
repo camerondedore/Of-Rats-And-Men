@@ -5012,6 +5012,7 @@ MonoBehaviour:
   groundResponseSpeed: 15
   fallResponseSpeed: 5
   stepHeight: 0.3
+  maxSlope: 60
   y: 0
   targetVelocity: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}

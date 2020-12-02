@@ -84,7 +84,7 @@ public class CharacterStateSlide : CharacterState
 			return blackboard.jumpState;
 		}
 
-		if(blackboard.feet.isGrounded || Time.time < clearTimeStart + 0.1f)
+		if((blackboard.feet.isGrounded || Time.time < clearTimeStart + 0.1f) && blackboard.feet.angle < blackboard.maxSlope)
 		{
 			if(blackboard.feet.isFlat && blackboard.feet.isFlatRay)
 			{
