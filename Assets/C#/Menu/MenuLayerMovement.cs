@@ -24,10 +24,10 @@ public class MenuLayerMovement : MonoBehaviour
 
     
 
-    void Update()
+    void FixedUpdate()
     {
-        x += MenuInput.look.x * Time.deltaTime * inputSpeed;
-        y += MenuInput.look.y * Time.deltaTime * inputSpeed;
+        x += MenuInput.look.x * Time.fixedDeltaTime * inputSpeed;
+        y += MenuInput.look.y * Time.fixedDeltaTime * inputSpeed;
 
 		x = Mathf.Clamp(x, -maxDisplacement, maxDisplacement);
 		y = Mathf.Clamp(y, -maxDisplacement, maxDisplacement);

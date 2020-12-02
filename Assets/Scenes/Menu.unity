@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDisplacement: 1
-  inputSpeed: -0.5
+  inputSpeed: -0.05
   layers:
   - displacementMultiplier: 20
     transform: {fileID: 789019061}
