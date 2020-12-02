@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuStateQuit : MenuState
+public class MenuStateLoadLevel3 : MenuState
 {
-    
+  
+	string sceneName = "Level 1 Farms";
 	float startTime = Mathf.Infinity;
 
 
 
    	public override void RunState()
 	{
-		if(startTime + blackboard.quitDelay < Time.time)
+		if(startTime + blackboard.loadDelay < Time.time)
 		{
-			SceneLoader.Quit();
+			SceneLoader.LoadLevel(sceneName);
 		}
 	}
 

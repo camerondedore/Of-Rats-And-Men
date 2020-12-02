@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuStateLoad : MenuState
+public class MenuStateLoadLevel2 : MenuState
 {
   
+	string sceneName = "Level 1 Farms";
 	float startTime = Mathf.Infinity;
 
 
 
    	public override void RunState()
 	{
-
+		if(startTime + blackboard.loadDelay < Time.time)
+		{
+			SceneLoader.LoadLevel(sceneName);
+		}
 	}
 
 
@@ -19,7 +23,7 @@ public class MenuStateLoad : MenuState
 	public override void StartState()
 	{
 		startTime = Time.time;
-		// fade out ui animation
+		blackboard.fadeAnim.SetTrigger("exit");
 	}
 
 
