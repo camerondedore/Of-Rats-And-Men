@@ -10,6 +10,13 @@ public class MenuInput : MonoBehaviour
 
 
 
+	void Update()
+    {
+		//InputSystem.Update();
+	}
+
+
+
 	public void OnMouse(InputValue value)
 	{
 		look = value.Get<Vector2>();

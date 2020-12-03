@@ -19,6 +19,8 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
+		//InputSystem.Update();
+
 		// DEPRECATED
         // move.x = Input.GetAxisRaw("Horizontal");
         // move.y = Input.GetAxisRaw("Vertical");
