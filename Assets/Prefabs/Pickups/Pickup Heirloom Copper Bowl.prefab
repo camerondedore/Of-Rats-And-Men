@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2025304956897430416, guid: af155266654b42f488d9a9d8f85cdde9,
+        type: 3}
+      propertyPath: heirloomName
+      value: Copper Bowl
+      objectReference: {fileID: 0}
     - target: {fileID: 2025304956897430423, guid: af155266654b42f488d9a9d8f85cdde9,
         type: 3}
       propertyPath: m_Name

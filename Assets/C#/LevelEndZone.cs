@@ -13,12 +13,13 @@ public class LevelEndZone : MonoBehaviour
 	string nextLevelName = "";
 	float animTime = 1.75f,
 		triggerTime = Mathf.Infinity;
+	bool loading = false;
 
 
 
 	void Update()
 	{
-		if(triggerTime + animTime < Time.time)
+		if(loading && triggerTime + animTime < Time.time)
 		{
 			SceneLoader.LoadLevel(nextLevelName);
 		}
@@ -28,8 +29,12 @@ public class LevelEndZone : MonoBehaviour
 
 	void OnTriggerEnter()
 	{
-		triggerTime = Time.time;
-		uiAnim.SetTrigger("load");
-		aud.source.Play();
+		if(!loading)
+		{
+			loading = true;
+			triggerTime = Time.time;
+			uiAnim.SetTrigger("load");
+			aud.source.Play();
+		}
 	}
 }
