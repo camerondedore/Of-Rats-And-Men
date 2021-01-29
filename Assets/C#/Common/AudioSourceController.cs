@@ -7,6 +7,7 @@ public class AudioSourceController : MonoBehaviour
 
 	[HideInInspector]
 	public AudioSource source;
+	public bool realTime = true;
 
 
 
@@ -19,7 +20,10 @@ public class AudioSourceController : MonoBehaviour
 
 	void Update()
 	{
-		source.pitch = Time.timeScale;
+		if(realTime)
+		{
+			source.pitch = Time.timeScale;
+		}
 	}
 
 

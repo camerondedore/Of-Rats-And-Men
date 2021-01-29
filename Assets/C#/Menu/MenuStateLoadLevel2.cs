@@ -22,6 +22,7 @@ public class MenuStateLoadLevel2 : MenuState
 
 	public override void StartState()
 	{
+		blackboard.aud.PlayOneShot(blackboard.playSound);
 		startTime = Time.time;
 		blackboard.fadeAnim.SetTrigger("exit");
 	}

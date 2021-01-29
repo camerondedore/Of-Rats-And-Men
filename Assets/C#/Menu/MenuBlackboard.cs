@@ -17,7 +17,11 @@ public class MenuBlackboard : MonoBehaviour
 	public GameObject levelSelectWindow,
 		heirloomsWindow,
 		settingsWindow;
+	public StateMachine thisMachine;
 	public Animator fadeAnim;
+	public AudioSourceController aud;
+	public AudioClip clickSound,
+		playSound;
 	public float quitDelay = 1,
 		loadDelay = 1;
 }

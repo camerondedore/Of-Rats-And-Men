@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenuStatePlay : PauseMenuState
+public class PauseMenuStatePause : PauseMenuState
 {
 
 
@@ -11,14 +11,14 @@ public class PauseMenuStatePlay : PauseMenuState
 
     public override void RunState()
 	{
-
+	
 	}
 
 
 
 	public override void StartState()
 	{
-		blackboard.menu.SetActive(false);
+		blackboard.menu.SetActive(true);
 	}
 
 
@@ -32,9 +32,9 @@ public class PauseMenuStatePlay : PauseMenuState
 
 	public override State Transition()
 	{
-		if(Time.timeScale <= 0)
+		if(Time.timeScale > 0)
 		{
-			return blackboard.pauseState;
+			return blackboard.playState;
 		}
 
 		return this;

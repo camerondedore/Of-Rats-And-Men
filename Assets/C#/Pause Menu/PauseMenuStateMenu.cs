@@ -23,6 +23,8 @@ public class PauseMenuStateMenu : PauseMenuState
 
 	public override void StartState()
 	{
+		blackboard.thisMachine.frozen = true;
+		blackboard.aud.PlayOneShot(blackboard.clickSound);
 		startTime = Time.unscaledTime;
 		blackboard.fadeAnim.SetTrigger("exit");
 	}

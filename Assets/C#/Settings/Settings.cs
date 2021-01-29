@@ -51,8 +51,9 @@ public class Settings : MonoBehaviour
 		{
 			// no settings exist
 			currentSettings = new playerSettings();
-			SaveSettings();
 		}
+
+		ApplySettings();
 
 		// Debug.Log(currentSettings.quality);
 		// Debug.Log(currentSettings.ssao);

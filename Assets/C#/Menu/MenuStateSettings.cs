@@ -18,6 +18,7 @@ public class MenuStateSettings : MenuState
 
 	public override void StartState()
 	{
+		blackboard.aud.PlayOneShot(blackboard.clickSound);
 		blackboard.settingsWindow.SetActive(true);
 	}
 

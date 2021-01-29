@@ -21,6 +21,8 @@ public class MenuStateQuit : MenuState
 
 	public override void StartState()
 	{
+		blackboard.thisMachine.frozen = true;
+		blackboard.aud.PlayOneShot(blackboard.clickSound);
 		startTime = Time.time;
 		blackboard.fadeAnim.SetTrigger("exit");
 	}

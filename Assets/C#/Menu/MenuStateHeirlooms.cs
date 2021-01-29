@@ -18,6 +18,7 @@ public class MenuStateHeirlooms : MenuState
 
 	public override void StartState()
 	{
+		blackboard.aud.PlayOneShot(blackboard.clickSound);
 		blackboard.heirloomsWindow.SetActive(true);
 	}
 
