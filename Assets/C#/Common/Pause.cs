@@ -47,7 +47,7 @@ public class Pause : MonoBehaviour
 
 
 
-	void PauseSet(bool paused)
+	public void PauseSet(bool paused)
 	{
 		// unpaused? ? pause : unpause
 		Time.timeScale = paused ? 0 : 1;
