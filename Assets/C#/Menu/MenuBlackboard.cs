@@ -21,7 +21,8 @@ public class MenuBlackboard : MonoBehaviour
 	public Animator fadeAnim;
 	public AudioSourceController aud;
 	public AudioClip clickSound,
-		playSound;
+		playSound,
+		loadSound;
 	public float quitDelay = 1,
 		loadDelay = 1;
 }

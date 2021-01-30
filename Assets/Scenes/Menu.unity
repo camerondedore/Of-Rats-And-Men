@@ -6909,6 +6909,7 @@ MonoBehaviour:
   aud: {fileID: 1107706401}
   clickSound: {fileID: 8300000, guid: b921c5cab30402c458da732d3e97ca3f, type: 3}
   playSound: {fileID: 8300000, guid: 573d20edb8d7f3a4fa1e3ae85af291b3, type: 3}
+  loadSound: {fileID: 8300000, guid: bd23b470de1ced24f86b8f0a2e3f28f4, type: 3}
   quitDelay: 1
   loadDelay: 1
 --- !u!114 &1979909718
