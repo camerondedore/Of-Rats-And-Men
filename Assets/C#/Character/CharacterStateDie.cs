@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterStateDie : CharacterState
 {
 
-	float restartDelay = 2.75f,
+	float restartDelay = 4.1f,
 		deathTime = Mathf.Infinity;
 	bool animated = false;
 

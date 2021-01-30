@@ -10,14 +10,16 @@ public class CharacterAudio : MonoBehaviour
 		jumpSound,
 		landSound,
 		dieSound;
-	AudioSourceController aud;
+	[SerializeField]
+	AudioSourceController audFeet,
+		audHead;
 	int stepSoundIndex = 0;
 
 
 
 	void Start()
 	{
-		aud = GetComponentInChildren<AudioSourceController>();
+		
 	}
 
 
@@ -31,43 +33,43 @@ public class CharacterAudio : MonoBehaviour
 		}
 
 		var stepSound = stepSounds[stepSoundIndex];
-		aud.PlayOneShot(stepSound);
+		audFeet.PlayOneShot(stepSound);
 	}
 
 
 
 	public void SlideStart()
 	{
-		aud.source.clip = slideSound;
-		aud.source.Play();
+		audFeet.source.clip = slideSound;
+		audFeet.source.Play();
 	}
 
 
 
 	public void SlideStop()
 	{
-		aud.source.clip = null;
-		aud.source.Stop();
+		audFeet.source.clip = null;
+		audFeet.source.Stop();
 	}
 
 
 
 	public void PlayJump()
 	{
-		aud.PlayOneShot(jumpSound);
+		audFeet.PlayOneShot(jumpSound);
 	}
 
 
 
 	public void PlayLand()
 	{
-		aud.PlayOneShot(landSound);
+		audFeet.PlayOneShot(landSound);
 	}
 
 
 
 	public void PlayDie()
 	{
-		aud.PlayOneShot(dieSound);
+		audHead.PlayOneShot(dieSound);
 	}
 }

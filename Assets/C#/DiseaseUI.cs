@@ -15,6 +15,10 @@ public class DiseaseUI : MonoBehaviour
 	[SerializeField]
 	Animator herbFlashAnim,
 		deathFadeAnim;
+	[SerializeField]
+	AudioSourceController aud;
+	[SerializeField]
+	AudioClip deathSound;
 	float veinInfectionStart = 0.33f,
 		oldInfection = 0;
 	bool inZones = false,
@@ -69,6 +73,7 @@ public class DiseaseUI : MonoBehaviour
 		if(!dead && Disease.disease.infection >= 100)
 		{
 			dead = true;
+			aud.PlayOneShot(deathSound);
 			deathFadeAnim.SetTrigger("die");
 		}
 
