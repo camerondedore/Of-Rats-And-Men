@@ -22,7 +22,7 @@ public class RavenStateIdle : RavenState
 	{
 		startTime = Time.time;
 		action = Random.Range(0f, 1f);
-		idleTime = Random.Range(2f, 6f);
+		idleTime = Random.Range(2f, 5f);
 		// animation
 		blackboard.anim.SetTrigger("idle");
 		blackboard.anim.SetFloat("idleOffset", Random.Range(0f, 1f));
