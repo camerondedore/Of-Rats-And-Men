@@ -19,7 +19,7 @@ RenderSettings:
   m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 10
-  m_LinearFogEnd: 200
+  m_LinearFogEnd: 100
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -11668,17 +11668,17 @@ AudioReverbZone:
   m_Enabled: 1
   m_MinDistance: 200
   m_MaxDistance: 200
-  m_ReverbPreset: 15
+  m_ReverbPreset: 17
   m_Room: -1000
-  m_RoomHF: -270
+  m_RoomHF: -800
   m_DecayTime: 1.49
-  m_DecayHFRatio: 0.86
-  m_Reflections: -1204
+  m_DecayHFRatio: 0.67
+  m_Reflections: -2273
   m_ReflectionsDelay: 0.007
-  m_Reverb: -4
+  m_Reverb: -1691
   m_ReverbDelay: 0.011
   m_HFReference: 5000
-  m_Diffusion: 100
+  m_Diffusion: 50
   m_Density: 100
   m_LFReference: 250
   m_RoomLF: 0
@@ -26797,6 +26797,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3431463183093616932, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463183093616932, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463183093616932, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463183093616932, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463183093616932, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431463183093616932, guid: 317c28a0496d68840b96fe05fdf4c2fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3431463184108143512, guid: 317c28a0496d68840b96fe05fdf4c2fa,
         type: 3}
       propertyPath: m_Name
