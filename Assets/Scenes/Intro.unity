@@ -5850,7 +5850,7 @@ GameObject:
   - component: {fileID: 1504577371}
   - component: {fileID: 1504577370}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: Button Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5865,7 +5865,8 @@ AudioSource:
   m_GameObject: {fileID: 1504577369}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7463175149713116062, guid: 1e383dca7174f5c44870c0a73b63b97a,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -6129,7 +6130,8 @@ AudioSource:
   m_GameObject: {fileID: 2068801622}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7463175149713116062, guid: 1e383dca7174f5c44870c0a73b63b97a,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 977e770cce3a1ca4d93099d19bb5cdb9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1

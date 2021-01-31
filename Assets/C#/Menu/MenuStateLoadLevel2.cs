@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuStateLoadLevel2 : MenuState
 {
   
-	string sceneName = "Level 1 Farms";
+	string sceneName = "Level 2 Town";
 	float startTime = Mathf.Infinity;
 
 

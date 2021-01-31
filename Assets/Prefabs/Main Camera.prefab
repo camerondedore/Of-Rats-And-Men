@@ -258,7 +258,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6461259072122476770}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1045299288
 MonoBehaviour:
@@ -3761,7 +3761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6461259072122476770}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3542068597822310164
 MonoBehaviour:
@@ -3786,7 +3786,8 @@ AudioSource:
   m_GameObject: {fileID: 5915361010255267927}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7463175149713116062, guid: 1e383dca7174f5c44870c0a73b63b97a,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -8811,7 +8812,7 @@ RectTransform:
   - {fileID: 648711692030507395}
   - {fileID: 1384579568378794092}
   m_Father: {fileID: 6461259072122476770}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8911,11 +8912,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6461259073623016155}
-  - {fileID: 3791099248962470808}
   - {fileID: 6461259071972631539}
   - {fileID: 6461259073286250762}
   - {fileID: 6461259072463001659}
   - {fileID: 1045299286}
+  - {fileID: 3791099248962470808}
   - {fileID: 1070737453376894463}
   - {fileID: 6116145707595397960}
   - {fileID: 3458543297775249167}
@@ -9102,7 +9103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6461259072122476770}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6461259072463001658
 MonoBehaviour:
@@ -9396,7 +9397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6461259072122476770}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6461259073286250765
 MonoBehaviour:
