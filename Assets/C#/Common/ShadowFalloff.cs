@@ -5,8 +5,9 @@ using UnityEngine;
 public class ShadowFalloff : MonoBehaviour
 {
     
+	[Tooltip("create different falloff curves for each quality level")]
 	[SerializeField]
-	AnimationCurve falloffCurve;
+	AnimationCurve[] qualityfalloffCurves;
 	Transform mainCamera;
 	Light lamp;
 
@@ -23,7 +24,7 @@ public class ShadowFalloff : MonoBehaviour
     void Update()
     {
 		var distaneToCamera = Vector3.Distance(transform.position, mainCamera.position);
-		var falloff = falloffCurve.Evaluate(distaneToCamera);
+		var falloff = qualityfalloffCurves[QualitySettings.GetQualityLevel()].Evaluate(distaneToCamera);
         lamp.shadowStrength = falloff;
 
 		if(falloff <= 0 && lamp.shadows != LightShadows.None)
