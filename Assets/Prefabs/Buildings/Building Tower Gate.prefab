@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8060807370910776610}
   - component: {fileID: 1334960118411003668}
   - component: {fileID: 4736153263688678381}
-  - component: {fileID: 3073435535816332838}
+  - component: {fileID: 8762545657950957551}
   m_Layer: 0
   m_Name: Building Tower Gate
   m_TagString: Untagged
@@ -85,7 +85,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3073435535816332838
+--- !u!64 &8762545657950957551
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,4 +98,4 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -462981019419857548, guid: 632ac991bf00e5c46ab65c6db35e425f, type: 3}
+  m_Mesh: {fileID: 5171968067840101269, guid: 632ac991bf00e5c46ab65c6db35e425f, type: 3}
