@@ -641,6 +641,7 @@ Transform:
   m_Children:
   - {fileID: 1756783649}
   - {fileID: 4767332520945507495}
+  - {fileID: 1657913752}
   m_Father: {fileID: 300301019}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3491,6 +3492,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8624367988834245622, guid: 19d32e5e832d84049b240b29a2bc65ea,
     type: 3}
   m_PrefabInstance: {fileID: 954832844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1657913751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 250445360}
+    m_Modifications:
+    - target: {fileID: 7338214200756644779, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_Name
+      value: Pickup Heirloom Pied Pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.192413
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.947418
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 183af494c4f945a489c6101f4ad50ef5, type: 3}
+--- !u!4 &1657913752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7338214200756644950, guid: 183af494c4f945a489c6101f4ad50ef5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1657913751}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1668602014 stripped
 Transform:
