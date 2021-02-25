@@ -17,6 +17,7 @@ public class CharacterBlackboard : MonoBehaviour
 	public Animator anim;
 	public VelocityTracker tracker;
 	public ParticleSystem feetDust,
+		fallDust,
 		vomit;
 	public CharacterAudio charAud;
 	public Transform character,
@@ -28,7 +29,8 @@ public class CharacterBlackboard : MonoBehaviour
 		stepHeight = 0.3f,
 		maxSlope = 80;
 	[HideInInspector]
-	public float y;
+	public float y,
+		fallDustHeight = 4;
 	[HideInInspector]
 	public Vector3 targetVelocity,
 		velocity,

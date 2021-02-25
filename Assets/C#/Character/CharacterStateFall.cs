@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterStateFall : CharacterState
 {
     
-
+	float startAltitude;
 
 
 
@@ -55,6 +55,8 @@ public class CharacterStateFall : CharacterState
 		blackboard.agent.stepOffset = 0;
 		// animate
 		blackboard.anim.SetTrigger("fall");
+		// height when starting to fall
+		startAltitude = transform.position.y;
 	}
 
 
@@ -66,6 +68,11 @@ public class CharacterStateFall : CharacterState
 		// animate
 		blackboard.anim.SetTrigger("jump");
 		blackboard.anim.ResetTrigger("fall");
+		// fall dust
+		if(startAltitude - transform.position.y >= blackboard.fallDustHeight )
+		{
+			blackboard.fallDust.Play();
+		}
 	}
 
 
