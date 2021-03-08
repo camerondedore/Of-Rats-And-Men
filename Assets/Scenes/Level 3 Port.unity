@@ -1782,6 +1782,7 @@ Transform:
   - {fileID: 8632883705780585828}
   - {fileID: 2126286233782718457}
   - {fileID: 8625439375807469694}
+  - {fileID: 8262041044067704523}
   m_Father: {fileID: 300301019}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13611,6 +13612,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69d49a30a8579a741a8855d1376c3aed, type: 3}
+--- !u!4 &8262041044067704523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+    type: 3}
+  m_PrefabInstance: {fileID: 8510222992266855510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8510222992266855510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 572028086}
+    m_Modifications:
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338553059518438045, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970406400629020273, guid: 806cc38fad286224d893a6952c5fac35,
+        type: 3}
+      propertyPath: m_Name
+      value: Buidling Kit Border 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 806cc38fad286224d893a6952c5fac35, type: 3}
 --- !u!4 &8625439375807469694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9044291885513846313, guid: e950c25b1ef30504082f64d8a40f2fd8,
