@@ -84,9 +84,9 @@ public class CharacterStateSlide : CharacterState
 			return blackboard.jumpState;
 		}
 
-		if((blackboard.feet.isGrounded || Time.time < clearTimeStart + 0.1f) && blackboard.feet.angle < blackboard.maxSlope)
+		if((blackboard.feet.isGrounded || Time.time < clearTimeStart + 0.1f) && (blackboard.feet.angle < blackboard.maxSlope || blackboard.feet.angleRay < blackboard.maxSlope))
 		{
-			if(blackboard.feet.isFlat && blackboard.feet.isFlatRay)
+			if(blackboard.feet.isFlat || blackboard.feet.isFlatRay)
 			{
 				// grounded
 				return blackboard.groundedState;

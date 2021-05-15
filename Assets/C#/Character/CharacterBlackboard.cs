@@ -28,6 +28,7 @@ public class CharacterBlackboard : MonoBehaviour
 		fallResponseSpeed = 5,
 		stepHeight = 0.3f,
 		maxSlope = 80;
+		// this maxSlope is for checking if falling should turn into sliding, where as the ground checker maxAngle is for being grounded
 	[HideInInspector]
 	public float y,
 		fallDustHeight = 4;
