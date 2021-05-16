@@ -10,7 +10,7 @@
 		_WaveHeight2 ("Wave Height 2", 2D) = "white" {}
 		_WaveHeight3 ("Wave Height 3", 2D) = "white" {}
 		_Foam ("Wave Foam", 2D) = "white" {}
-		_FoamCutoff ("Foam Cutoff", Range(0,2)) = 1
+		_FoamCutoff ("Foam Cutoff", Range(0,10)) = 1
 		_FoamScale ("Foam Scale", Float) = 30
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0

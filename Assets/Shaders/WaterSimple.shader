@@ -12,8 +12,10 @@ Shader "Custom/WaterSimple"
 		_WaveHeight2 ("Wave Height 2", 2D) = "white" {}
 		_WaveHeight3 ("Wave Height 3", 2D) = "white" {}
 		_Foam ("Wave Foam", 2D) = "white" {}
-		_FoamCutoff ("Foam Cutoff", Range(0,2)) = 1
+		_FoamCutoff ("Foam Cutoff", Range(0,10)) = 1
 		_FoamScale ("Foam Scale", Float) = 30
+		_FoamEdgePower ("Foam Edge Power", Float) = 5
+		_FoamEdgeDistance ("Foam Edge Distance", Float) = 5
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
 		_WaveData1 ("Wave Data 1 (x,y,scale,amp)", Vector) = (0,0,10,1)
@@ -86,6 +88,8 @@ Shader "Custom/WaterSimple"
 		float _WaterFogDensity;
 		fixed4 _WaterFogColor;
 		float _RefractionStrength;
+		float _FoamEdgePower;
+		float _FoamEdgeDistance;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -155,11 +159,14 @@ Shader "Custom/WaterSimple"
 			// water background
 			float3 backgroundColor = tex2D(_WaterBackground, uv).rgb;
 
+			// edge foam
+			fixed4 foamEdge = clamp(tex2D (_Foam, IN.uv_MainTex * _FoamScale + foamPosition), 0.25, 1) * ((1 - depthDifference / _FoamEdgeDistance)) * _FoamEdgePower;
+
 			// apply
-			o.Albedo = foam;
-			o.Emission = lerp(_WaterFogColor + (waveEmit1 + waveEmit2 + waveEmit3) * 0.06, backgroundColor, fogFactor) + 0.25 * foam;
+			o.Albedo = foam + clamp(foamEdge, 0, 1);
+			o.Emission = lerp(_WaterFogColor + (waveEmit1 + waveEmit2 + waveEmit3) * 0.06, backgroundColor, fogFactor) + 0.25 * foam + 0.25 * clamp(foamEdge, 0, 0.25);
             o.Metallic = _Metallic;
-            o.Smoothness = _Glossiness - waveColorTotal;
+            o.Smoothness = _Glossiness - waveColorTotal - clamp((1 - depthDifference / _FoamEdgeDistance) * _FoamEdgePower, 0, 1);
             o.Alpha = _Color.a;
 			o.Normal = UnpackScaleNormal(n1, _WaveData1.w) + UnpackScaleNormal(n2, _WaveData2.w) + UnpackScaleNormal(n3, _WaveData3.w);
         }
