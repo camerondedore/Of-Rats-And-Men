@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6079848315888055864}
   - component: {fileID: 9071377677751972725}
   - component: {fileID: 8716808325950014541}
+  - component: {fileID: -442459796609703728}
   m_Layer: 0
   m_Name: Prop Pier Log 2
   m_TagString: Untagged
@@ -80,3 +81,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-442459796609703728
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4098240620058995414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.314525, y: 5.847272, z: 0.318064}
+  m_Center: {x: 0.0018905029, y: -3.079217, z: -0.001485005}
