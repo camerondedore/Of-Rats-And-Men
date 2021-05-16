@@ -7,13 +7,19 @@ public class AudioSourceController : MonoBehaviour
 
 	[HideInInspector]
 	public AudioSource source;
-	public bool realTime = true;
+	public bool realTime = true,
+		randomStart = false;
 
 
 
 	void Awake()
 	{
 		source = GetComponent<AudioSource>();
+		if(randomStart)
+		{
+			source.time = Random.Range(0f, source.clip.length);
+			//Debug.Log(source.time);
+		}
 	}
 
 
