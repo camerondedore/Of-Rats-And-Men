@@ -97,12 +97,12 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FoamCutoff: 1.48
+    - _FoamCutoff: 0.78
     - _FoamScale: 30
     - _GlossMapScale: 1
-    - _Glossiness: 0.9
+    - _Glossiness: 0.7
     - _GlossyReflections: 1
-    - _Metallic: 0.8
+    - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -130,9 +130,9 @@ Material:
     - _WaveA: {r: 1, g: 1, b: 0.2, a: 3}
     - _WaveB: {r: 1, g: 0.5, b: 0.2, a: 20}
     - _WaveC: {r: 1, g: 3, b: 0.1, a: 10}
-    - _WaveData1: {r: 0.002, g: 0.006, b: 3, a: 1.5}
-    - _WaveData2: {r: 0, g: 0.02, b: 15, a: 1}
-    - _WaveData3: {r: 0.053, g: 0.06, b: 40, a: 0.6}
+    - _WaveData1: {r: 0.002, g: 0.006, b: 3, a: 3}
+    - _WaveData2: {r: 0, g: 0.02, b: 15, a: 1.5}
+    - _WaveData3: {r: 0.053, g: 0.06, b: 30, a: 0.8}
     - _WaveData4: {r: 0.02, g: 0.03, b: 100, a: 0.4}
     - _WaveVelocity1: {r: 0.006, g: 0.008, b: 0, a: 0}
     - _WaveVelocity2: {r: 0.005, g: 0.05, b: 0, a: 0}

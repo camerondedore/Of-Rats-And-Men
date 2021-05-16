@@ -97,7 +97,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FoamCutoff: 0.68
+    - _FoamCutoff: 0.78
     - _FoamEdge: 1.24
     - _FoamEdgeDistance: 0.5
     - _FoamEdgePower: 0.75
@@ -116,7 +116,7 @@ Material:
     - _SrcBlend: 1
     - _Steepness: 0.25
     - _UVSec: 0
-    - _WaterFogDensity: 0.5
+    - _WaterFogDensity: 1
     - _WaveAmp1: 3
     - _WaveAmp2: 1.5
     - _WaveAmp3: 0.5
@@ -134,8 +134,8 @@ Material:
     - _WaveB: {r: 1, g: 0.5, b: 0.2, a: 20}
     - _WaveC: {r: 1, g: 3, b: 0.1, a: 10}
     - _WaveData1: {r: 0.002, g: 0.006, b: 3, a: 4}
-    - _WaveData2: {r: 0, g: 0.02, b: 20, a: 2}
-    - _WaveData3: {r: 0.053, g: 0.06, b: 40, a: 1}
+    - _WaveData2: {r: 0, g: 0.02, b: 15, a: 2}
+    - _WaveData3: {r: 0.053, g: 0.06, b: 30, a: 1}
     - _WaveData4: {r: 0.02, g: 0.03, b: 100, a: 0.4}
     - _WaveVelocity1: {r: 0.006, g: 0.008, b: 0, a: 0}
     - _WaveVelocity2: {r: 0.005, g: 0.05, b: 0, a: 0}
