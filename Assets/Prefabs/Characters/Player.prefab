@@ -10282,7 +10282,7 @@ MonoBehaviour:
   cameraPoint: {fileID: 3431463183730682448}
   mask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4113
   speed: 20
 --- !u!1 &3431463184701308004
 GameObject:
@@ -10508,6 +10508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   realTime: 1
+  randomStart: 0
 --- !u!1 &3954671321443560339
 GameObject:
   m_ObjectHideFlags: 0
@@ -10651,6 +10652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   realTime: 1
+  randomStart: 0
 --- !u!1 &4054857664234920500
 GameObject:
   m_ObjectHideFlags: 0
