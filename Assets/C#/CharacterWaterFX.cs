@@ -38,6 +38,7 @@ public class CharacterWaterFX : MonoBehaviour
 		{
 			underWater = true;
 			fx.Play();
+			fx.Emit(2);
 			targetVolume = startVolume;
 			volumeSpeed = 10;
 		}
