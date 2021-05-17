@@ -36,4 +36,6 @@ public class CharacterBlackboard : MonoBehaviour
 	public Vector3 targetVelocity,
 		velocity,
 		lookDirection;
+	[HideInInspector]
+	public Disconnector jumpDisconnector = new Disconnector();
 }

@@ -77,7 +77,7 @@ public class CharacterStateGrounded : CharacterState
 		// check if grounded and if the surface isn't really steep
 		if((blackboard.feet.isGrounded || blackboard.feet.isGroundedRay) && (blackboard.feet.angle < blackboard.maxSlope || blackboard.feet.angleRay < blackboard.maxSlope))
 		{
-			if(blackboard.input.jump > 0 && (blackboard.feet.isFlat || blackboard.feet.isFlatRay))
+			if(blackboard.jumpDisconnector.Trip(blackboard.input.jump) && blackboard.input.jump > 0 && (blackboard.feet.isFlat || blackboard.feet.isFlatRay))
 			{
 				// jump
 				return blackboard.jumpState;
