@@ -133,9 +133,9 @@ Material:
     - _WaveA: {r: 1, g: 1, b: 0.2, a: 3}
     - _WaveB: {r: 1, g: 0.5, b: 0.2, a: 20}
     - _WaveC: {r: 1, g: 3, b: 0.1, a: 10}
-    - _WaveData1: {r: 0.002, g: 0.006, b: 3, a: 4}
-    - _WaveData2: {r: 0, g: 0.02, b: 15, a: 2}
-    - _WaveData3: {r: 0.053, g: 0.06, b: 30, a: 1}
+    - _WaveData1: {r: 0.002, g: 0.006, b: 0.01, a: 4}
+    - _WaveData2: {r: 0, g: 0.02, b: 0.05, a: 2}
+    - _WaveData3: {r: 0.053, g: 0.06, b: 0.1, a: 1}
     - _WaveData4: {r: 0.02, g: 0.03, b: 100, a: 0.4}
     - _WaveVelocity1: {r: 0.006, g: 0.008, b: 0, a: 0}
     - _WaveVelocity2: {r: 0.005, g: 0.05, b: 0, a: 0}
