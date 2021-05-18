@@ -74,8 +74,8 @@ public class CharacterStateGrounded : CharacterState
 
 	public override State Transition()
 	{
-		// check if grounded and if the surface isn't really steep
-		if((blackboard.feet.isGrounded || blackboard.feet.isGroundedRay) && (blackboard.feet.angle < blackboard.maxSlope || blackboard.feet.angleRay < blackboard.maxSlope))
+		// check if flat and if the surface isn't really steep
+		if((blackboard.feet.isFlat || blackboard.feet.isFlatRay))
 		{
 			if(blackboard.jumpDisconnector.Trip(blackboard.input.jump) && blackboard.input.jump > 0 && (blackboard.feet.isFlat || blackboard.feet.isFlatRay))
 			{
@@ -83,11 +83,12 @@ public class CharacterStateGrounded : CharacterState
 				return blackboard.jumpState;
 			}
 
-			if(!blackboard.feet.isFlat && !blackboard.feet.isFlatRay)
-			{
-				// slide
-				return blackboard.slideState;
-			}
+			// removed because of catching edges, now character needs to fall first to be able to slide
+			// if(!blackboard.feet.isFlat && !blackboard.feet.isFlatRay)
+			// {
+			// 	// slide
+			// 	return blackboard.slideState;
+			// }
 
 			return this;
 		}
