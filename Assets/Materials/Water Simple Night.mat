@@ -101,7 +101,7 @@ Material:
     - _FoamEdge: 1.24
     - _FoamEdgeDistance: 0.5
     - _FoamEdgePower: 0.75
-    - _FoamScale: 60
+    - _FoamScale: 0.1
     - _GlossMapScale: 1
     - _Glossiness: 0.9
     - _GlossyReflections: 1
