@@ -100,7 +100,7 @@ Material:
     - _FoamCutoff: 0.78
     - _FoamEdge: 1.24
     - _FoamEdgeDistance: 0.5
-    - _FoamEdgePower: 0.75
+    - _FoamEdgePower: 1
     - _FoamScale: 0.1
     - _GlossMapScale: 1
     - _Glossiness: 0.9
@@ -126,7 +126,7 @@ Material:
     - _Wavelength: 10
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.14539598, g: 0.21763755, b: 0.32599998, a: 1}
+    - _Color: {r: 0.14539593, g: 0.21763751, b: 0.32599995, a: 1}
     - _Direction: {r: 1, g: 0.5, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _WaterFogColor: {r: 0.03137255, g: 0.04705883, b: 0.098039225, a: 1}
