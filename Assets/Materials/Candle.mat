@@ -64,10 +64,11 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EmissionStrength: 5
-    - _FlickerMin: 0.25
+    - _EmissionStrength: 60
+    - _FlickerMin: 0.2
     - _FlickerSpeed: 1.5
-    - _FlickerTurb: 10
+    - _FlickerTurb: 0.7
+    - _FlickerWorldUnit: 0.08
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -82,4 +83,4 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 0.92471945, b: 0.6650944, a: 1}
-    - _EmissionColor: {r: 2.9960785, g: 1.9764706, b: 0, a: 1}
+    - _EmissionColor: {r: 1, g: 0.6835286, b: 0.19339621, a: 1}
