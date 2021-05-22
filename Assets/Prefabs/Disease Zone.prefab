@@ -4993,7 +4993,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 2
-  MaxDistance: 16
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -5082,3 +5082,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   realTime: 1
+  randomStart: 0
