@@ -16,6 +16,7 @@ public class MenuBlackboard : MonoBehaviour
 	// 	quitState;
 	public GameObject levelSelectWindow,
 		heirloomsWindow,
+		controlsWindow,
 		settingsWindow;
 	public StateMachine thisMachine;
 	public Animator fadeAnim;
