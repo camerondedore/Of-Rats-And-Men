@@ -8,7 +8,15 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class Settings : MonoBehaviour
 {
-    
+    // public static Vector2[] resolutions = 
+	// 	{
+	// 		new Vector2(2560, 1440),
+	// 		new Vector2(1920, 1080),
+	// 		new Vector2(1680, 1050),
+	// 		new Vector2(1600, 900),
+	// 		new Vector2(1440, 900),
+	// 		new Vector2(1366, 768)
+	// 	};
 	public static playerSettings currentSettings;
 	[SerializeField] PostProcessProfile ppp;
 	static AmbientOcclusion ssao;
@@ -69,6 +77,9 @@ public class Settings : MonoBehaviour
 		ssao.active = Settings.currentSettings.ssao;
 		bloom.active = Settings.currentSettings.bloom;
 		Look.lookSensitivity = Settings.currentSettings.sensitivity;
+		//Screen.SetResolution((int) Settings.currentSettings.resolution.x,
+		//	(int) Settings.currentSettings.resolution.y, 
+		//	Settings.currentSettings.fullscreen);
 	}
 
 
@@ -76,9 +87,11 @@ public class Settings : MonoBehaviour
 	[System.Serializable]
 	public class playerSettings
 	{
+		//public Vector2 resolution = new Vector2(Screen.currentResolution.width, Screen.currentResolution.height);
 		public int quality = 5;
 		public bool ssao = true,
-			bloom = true;
+			bloom = true,
+			fullscreen = true;
 		public float sensitivity = 10;
 	}
 }
