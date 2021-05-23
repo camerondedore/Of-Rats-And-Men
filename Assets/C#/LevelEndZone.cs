@@ -11,8 +11,9 @@ public class LevelEndZone : MonoBehaviour
 	AudioSourceController aud;
 	[SerializeField]
 	string nextLevelName = "";
-	float animTime = 1.75f,
-		triggerTime = Mathf.Infinity;
+	[SerializeField]
+	float animTime = 1.75f;
+	float triggerTime = Mathf.Infinity;
 	bool loading = false;
 
 
