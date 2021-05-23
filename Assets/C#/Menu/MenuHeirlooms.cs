@@ -17,7 +17,12 @@ public class MenuHeirlooms : MonoBehaviour
 		{
 			if(!Heirlooms.collectedHeirlooms.Contains(h.name))
 			{
-				h.display.SetActive(false);
+				foreach(Transform c in h.display.transform)
+				{
+					c.gameObject.SetActive(false);
+				}
+				
+				//h.display.SetActive(false);
 			}
 		}
 	}
