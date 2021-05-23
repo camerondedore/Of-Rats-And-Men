@@ -100,7 +100,7 @@ Material:
     - _FoamCutoff: 0.9
     - _FoamEdgeDistance: 1
     - _FoamEdgePower: 1
-    - _FoamScale: 30
+    - _FoamScale: 0.1
     - _GlossMapScale: 1
     - _Glossiness: 0.9
     - _GlossyReflections: 1
@@ -125,16 +125,16 @@ Material:
     - _Wavelength: 10
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.58431375, g: 0.7137255, b: 0.8980393, a: 1}
+    - _Color: {r: 0.29800004, g: 0.5933559, b: 1, a: 1}
     - _Direction: {r: 1, g: 0.5, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _WaterFogColor: {r: 0.43137258, g: 0.5372549, b: 0.7058824, a: 1}
+    - _WaterFogColor: {r: 0.09568103, g: 0.30858594, b: 0.587, a: 1}
     - _WaveA: {r: 1, g: 1, b: 0.2, a: 3}
     - _WaveB: {r: 1, g: 0.5, b: 0.2, a: 20}
     - _WaveC: {r: 1, g: 3, b: 0.1, a: 10}
-    - _WaveData1: {r: 0.002, g: 0.006, b: 3, a: 4}
-    - _WaveData2: {r: 0, g: 0.02, b: 15, a: 2}
-    - _WaveData3: {r: 0.053, g: 0.06, b: 30, a: 1}
+    - _WaveData1: {r: 0.002, g: 0.006, b: 0.01, a: 4}
+    - _WaveData2: {r: 0, g: 0.02, b: 0.05, a: 2}
+    - _WaveData3: {r: 0.053, g: 0.06, b: 0.1, a: 1}
     - _WaveData4: {r: 0.02, g: 0.03, b: 100, a: 0.4}
     - _WaveVelocity1: {r: 0.006, g: 0.008, b: 0, a: 0}
     - _WaveVelocity2: {r: 0.005, g: 0.05, b: 0, a: 0}
