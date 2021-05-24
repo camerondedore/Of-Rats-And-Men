@@ -6,6 +6,9 @@ ModelImporter:
   - first:
       74: 1989289236423521904
     second: Default Take
+  - first:
+      74: 7077459128062094022
+    second: char-farmer-idle
   externalObjects: {}
   materials:
     materialImportMode: 0
