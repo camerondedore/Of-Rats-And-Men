@@ -9,6 +9,8 @@ public class FarmerAudio : MonoBehaviour
 	AudioClip[] stepSounds,
 		rakeSounds;
 	[SerializeField]
+	AudioClip rakeShovelSound;
+	[SerializeField]
 	AudioSourceController aud;
 	int stepSoundIndex = 0,
 		rakeSoundIndex = 0;
@@ -46,5 +48,12 @@ public class FarmerAudio : MonoBehaviour
 
 		var rakeSound = rakeSounds[rakeSoundIndex];
 		aud.PlayOneShot(rakeSound);
+	}
+
+
+
+	public void ShovelEvent()
+	{
+		aud.PlayOneShot(rakeShovelSound);
 	}
 }
