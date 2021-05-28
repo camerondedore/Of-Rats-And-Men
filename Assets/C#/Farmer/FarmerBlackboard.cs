@@ -6,6 +6,9 @@ public class FarmerBlackboard : MonoBehaviour
 {
     
 	public State idleState,
-		scoopState;
+		scoopState,
+		wipeState;
 	public Animator anim;
+	public float lastWipeTime = 0,
+		wipeTime = 10;
 }

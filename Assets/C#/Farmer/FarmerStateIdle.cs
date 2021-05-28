@@ -40,6 +40,11 @@ public class FarmerStateIdle : FarmerState
 			return blackboard.scoopState;
 		}
 
+		if(Time.time > blackboard.lastWipeTime + blackboard.wipeTime)
+		{
+			return blackboard.wipeState;
+		}
+
 		return this;
 	}
 }
