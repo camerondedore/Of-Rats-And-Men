@@ -191,7 +191,7 @@ MonoBehaviour:
   controller: {fileID: 6999605738236427659}
   player: {fileID: 0}
   fleeDistance: 5
-  fleeResetDistance: 15
+  fleeResetDistance: 10
   runSpeed: 7
   walkSpeed: 3
   anim: {fileID: 1490460483880675437}

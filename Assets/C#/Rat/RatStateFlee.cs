@@ -12,7 +12,7 @@ public class RatStateFlee : RatState
 	public override void RunState()
 	{
 		// path finding
-		if(Vector3.Distance(transform.root.position, blackboard.pathNodes[blackboard.targetNodeIndex].position) < 0.1f)
+		if(Vector3.Distance(transform.root.position, blackboard.pathNodes[blackboard.targetNodeIndex].position) < 0.33f)
 		{
 			// get next node
 			blackboard.targetNodeIndex = RatPathUtility.GetNextNode(blackboard.pathNodes, blackboard.pathDirection, blackboard.targetNodeIndex);

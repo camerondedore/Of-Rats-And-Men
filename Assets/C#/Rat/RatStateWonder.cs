@@ -13,7 +13,7 @@ public class RatStateWonder : RatState
 	public override void RunState()
 	{
 		// path finding
-		if(Vector3.Distance(transform.root.position, blackboard.pathNodes[blackboard.targetNodeIndex].position) < 0.1f)
+		if(Vector3.Distance(transform.root.position, blackboard.pathNodes[blackboard.targetNodeIndex].position) < 0.33f)
 		{
 			// get next node
 			blackboard.targetNodeIndex = RatPathUtility.GetNextNode(blackboard.pathNodes, blackboard.pathDirection, blackboard.targetNodeIndex);
@@ -54,6 +54,12 @@ public class RatStateWonder : RatState
 
 	public override State Transition()
 	{
+		// run from player
+		if(Vector3.Distance(transform.position, blackboard.player.position) < blackboard.fleeDistance)
+		{
+			return blackboard.fleeState;
+		}
+		
 		// idle
 		if(Time.time > startTime + wonderTime)
 		{
