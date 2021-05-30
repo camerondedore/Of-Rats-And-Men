@@ -77,9 +77,9 @@ public class Settings : MonoBehaviour
 		ssao.active = Settings.currentSettings.ssao;
 		bloom.active = Settings.currentSettings.bloom;
 		Look.lookSensitivity = Settings.currentSettings.sensitivity;
-		//Screen.SetResolution((int) Settings.currentSettings.resolution.x,
-		//	(int) Settings.currentSettings.resolution.y, 
-		//	Settings.currentSettings.fullscreen);
+		Screen.SetResolution((int) Screen.width,
+			(int) Screen.height, 
+			Settings.currentSettings.fullscreen);
 	}
 
 
