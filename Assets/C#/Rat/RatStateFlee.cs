@@ -41,6 +41,9 @@ public class RatStateFlee : RatState
 			blackboard.player);
 		// get next node
 		blackboard.targetNodeIndex = RatPathUtility.GetNextNode(blackboard.pathNodes, blackboard.pathDirection, blackboard.targetNodeIndex);
+
+		// audio
+		blackboard.aud.source.volume = 1;
 	}
 
 
@@ -49,6 +52,9 @@ public class RatStateFlee : RatState
 	{
 		// stop
 		blackboard.controller.velocity = Vector3.zero;
+
+		// audio
+		blackboard.aud.source.volume = 0;
 	}
 
 

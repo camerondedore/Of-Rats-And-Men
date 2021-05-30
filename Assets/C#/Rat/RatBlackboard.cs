@@ -10,6 +10,7 @@ public class RatBlackboard : MonoBehaviour
 		wonderState;
 	public RatController controller;
 	public Transform player;
+	public AudioSourceController aud;
 	public float fleeDistance = 5,
 		fleeResetDistance = 15,
 		runSpeed = 7,
