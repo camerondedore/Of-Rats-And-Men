@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1490460483462979929}
-  - component: {fileID: 1490460483462979906}
+  - component: {fileID: 538139730762319005}
   - component: {fileID: 1490460483462979933}
   - component: {fileID: 1490460483462979932}
   - component: {fileID: 1490460483462979935}
@@ -159,7 +159,7 @@ Transform:
   m_Father: {fileID: 5896787680409776131}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1490460483462979906
+--- !u!114 &538139730762319005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1490460483462979928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f653ae11da137249b50ba716159be86, type: 3}
+  m_Script: {fileID: 11500000, guid: b69ba3d00dd235f4ea12ea2312fb7935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   frozen: 0
@@ -187,11 +187,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idleState: {fileID: 1490460483462979932}
   fleeState: {fileID: 1490460483462979935}
-  wonderState: {fileID: 0}
+  wonderState: {fileID: 1490460483462979934}
+  controller: {fileID: 6999605738236427659}
   player: {fileID: 0}
   fleeDistance: 5
   fleeResetDistance: 15
-  speed: 7
+  runSpeed: 7
+  walkSpeed: 3
   anim: {fileID: 1490460483880675437}
   pathNodes: []
   targetNodeIndex: 0
@@ -234,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3cf87e5958e95f4c990acfa693eb18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blackboard: {fileID: 0}
 --- !u!1 &1979426970419368951
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5896787680409776131}
   - component: {fileID: 1490460483880675437}
+  - component: {fileID: 6999605738236427659}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -654,6 +658,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6999605738236427659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7462113838095106576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b4be19ee9c42a47b2d6e45450d6859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!1 &7625869282337605489
 GameObject:
   m_ObjectHideFlags: 0

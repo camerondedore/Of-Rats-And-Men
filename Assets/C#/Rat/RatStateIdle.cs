@@ -58,7 +58,7 @@ public class RatStateIdle : RatState
 		// wonder
 		if(Time.time > startTime + idleTime)
 		{
-			//return blackboard.wonderState;
+			return blackboard.wonderState;
 		}
 
 		return this;

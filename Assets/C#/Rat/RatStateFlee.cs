@@ -18,14 +18,12 @@ public class RatStateFlee : RatState
 			blackboard.targetNodeIndex = RatPathUtility.GetNextNode(blackboard.pathNodes, blackboard.pathDirection, blackboard.targetNodeIndex);
 		}
 		// get velocity
-		var velocity = (blackboard.pathNodes[blackboard.targetNodeIndex].position - transform.root.position).normalized * blackboard.speed * Time.fixedDeltaTime;
+		var velocity = (blackboard.pathNodes[blackboard.targetNodeIndex].position - transform.root.position).normalized * blackboard.runSpeed;
 		// move
-		transform.root.position += velocity;
-		// rotate
-		transform.root.forward = velocity;
+		blackboard.controller.velocity = velocity;
 
 		// animation (0.33 is to normalize the speed to the animation, which is at 3 m/s)
-		blackboard.anim.SetFloat("speed", blackboard.speed * 0.33f);
+		blackboard.anim.SetFloat("speed", blackboard.runSpeed * 0.33f);
 	}
 
 
@@ -49,7 +47,8 @@ public class RatStateFlee : RatState
 
 	public override void EndState()
 	{
-
+		// stop
+		blackboard.controller.velocity = Vector3.zero;
 	}
 
 
